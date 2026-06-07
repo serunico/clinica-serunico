@@ -1,0 +1,3339 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ser Único, Apoio Especializado para o Desenvolvimento Infantil | ABA & Psicologia</title>
+<meta name="description" content="Clínica multidisciplinar em Portugal. Intervenção ABA, Psicologia Infantil e Avaliações de Desenvolvimento. Faça o nosso quiz gratuito de 2 minutos e descubra se o seu filho beneficiaria de apoio especializado." />
+<meta name="keywords" content="ABA Portugal, terapia ABA, autismo, intervenção precoce, psicologia infantil, atraso desenvolvimento, sinais autismo, IBA Portugal" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ser Único, Apoio Especializado para o Desenvolvimento Infantil" />
+<meta property="og:description" content="Faça o quiz gratuito de 2 minutos e receba uma avaliação personalizada do desenvolvimento do seu filho." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_PT" />
+<meta property="og:url" content="https://www.ser-unico.com" />
+<meta property="og:image" content="https://www.ser-unico.com/logo.png" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<!-- Schema.org Local Business -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MedicalBusiness",
+ "name": "Ser Único",
+ "description": "Clínica multidisciplinar especializada em intervenção ABA, psicologia infantil e avaliações de desenvolvimento.",
+ "telephone": "+351211372027",
+ "email": "geral@ser-unico.com",
+ "address": {
+ "@type": "PostalAddress",
+ "addressCountry": "PT"
+ },
+ "medicalSpecialty": ["Behavioral Therapy", "Child Psychology", "Developmental Assessment"],
+ "priceRange": "€35-€60"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+ --lavender: #d9cde3;
+ --lavender-soft: #ece4f1;
+ --lavender-deep: #b8a3cc;
+ --aubergine: #3d2a52;
+ --aubergine-soft: #5b4377;
+ --cream: #faf5ed;
+ --cream-warm: #f4ead8;
+ --terracotta: #c4654a;
+ --terracotta-soft: #d88a72;
+ --sage: #8a9d7e;
+ --ink: #241932;
+ --muted: #6b5f7d;
+ --bg: #fdfcfe;
+ --border: #e8dff0;
+ --shadow-sm: 0 2px 8px rgba(61, 42, 82, 0.06);
+ --shadow-md: 0 8px 24px rgba(61, 42, 82, 0.08);
+ --shadow-lg: 0 20px 60px rgba(61, 42, 82, 0.12);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+ font-family: 'DM Sans', -apple-system, sans-serif;
+ background: var(--bg);
+ color: var(--ink);
+ line-height: 1.6;
+ overflow-x: hidden;
+}
+
+.serif { font-family: 'Fraunces', Georgia, serif; font-optical-sizing: auto; }
+
+/* ============ NAV ============ */
+nav {
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ background: rgba(253, 252, 254, 0.92);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+ max-width: 1320px;
+ margin: 0 auto;
+ padding: 1.1rem 2rem;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 2rem;
+}
+
+.logo {
+ font-family: 'Fraunces', serif;
+ font-weight: 600;
+ font-size: 1.5rem;
+ letter-spacing: -0.02em;
+ color: var(--aubergine);
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ gap: 0.65rem;
+}
+
+.logo-mark {
+ width: 52px;
+ height: 36px;
+ object-fit: contain;
+ display: inline-block;
+}
+
+.nav-links {
+ display: flex;
+ gap: 2rem;
+ list-style: none;
+ align-items: center;
+}
+
+.nav-links a {
+ color: var(--ink);
+ text-decoration: none;
+ font-size: 0.95rem;
+ font-weight: 500;
+ transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--terracotta); }
+
+.nav-cta {
+ background: var(--aubergine);
+ color: var(--cream) !important;
+ padding: 0.6rem 1.2rem;
+ border-radius: 100px;
+ font-weight: 500;
+ transition: all 0.25s;
+}
+.nav-cta:hover { background: var(--terracotta); transform: translateY(-1px); }
+
+.nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+.nav-burger span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 5px 0; transition: 0.3s; }
+
+@media (max-width: 880px) {
+ .nav-links { display: none; position: absolute; top: 100%; right: 0; left: 0; background: var(--bg); flex-direction: column; padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); }
+ .nav-links.open { display: flex; }
+ .nav-burger { display: block; }
+}
+
+/* ============ HERO ============ */
+.hero {
+ position: relative;
+ padding: 4rem 2rem 6rem;
+ overflow: hidden;
+}
+
+.hero-bg {
+ position: absolute; inset: 0;
+ pointer-events: none;
+ z-index: 0;
+}
+.blob {
+ position: absolute;
+ border-radius: 50%;
+ filter: blur(60px);
+ opacity: 0.6;
+}
+.blob-1 { width: 500px; height: 500px; background: var(--lavender); top: -150px; right: -100px; }
+.blob-2 { width: 400px; height: 400px; background: var(--cream-warm); bottom: -100px; left: -100px; opacity: 0.7; }
+
+.hero-inner {
+ position: relative;
+ z-index: 1;
+ max-width: 1320px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1.2fr 1fr;
+ gap: 4rem;
+ align-items: center;
+}
+
+.hero-eyebrow {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.5rem;
+ background: var(--lavender-soft);
+ color: var(--aubergine);
+ padding: 0.4rem 0.9rem;
+ border-radius: 100px;
+ font-size: 0.85rem;
+ font-weight: 500;
+ margin-bottom: 1.5rem;
+}
+.hero-eyebrow::before { content: "✦"; color: var(--terracotta); }
+
+.hero h1 {
+ font-family: 'Fraunces', serif;
+ font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+ line-height: 1.02;
+ letter-spacing: -0.025em;
+ font-weight: 400;
+ color: var(--aubergine);
+ margin-bottom: 1.5rem;
+}
+.hero h1 em {
+ font-style: italic;
+ font-weight: 300;
+ color: var(--terracotta);
+}
+
+.hero-sub {
+ font-size: 1.15rem;
+ color: var(--muted);
+ margin-bottom: 2rem;
+ max-width: 540px;
+ line-height: 1.6;
+}
+
+.hero-ctas {
+ display: flex;
+ gap: 1rem;
+ flex-wrap: wrap;
+ margin-bottom: 2rem;
+}
+
+.btn-primary {
+ background: var(--aubergine);
+ color: var(--cream);
+ padding: 1.05rem 1.8rem;
+ border-radius: 100px;
+ text-decoration: none;
+ font-weight: 500;
+ font-size: 1rem;
+ display: inline-flex;
+ align-items: center;
+ gap: 0.6rem;
+ border: none;
+ cursor: pointer;
+ transition: all 0.25s;
+ box-shadow: var(--shadow-md);
+}
+.btn-primary:hover { background: var(--terracotta); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.btn-primary .arrow { transition: transform 0.25s; }
+.btn-primary:hover .arrow { transform: translateX(4px); }
+
+.btn-secondary {
+ background: transparent;
+ color: var(--aubergine);
+ padding: 1.05rem 1.8rem;
+ border-radius: 100px;
+ text-decoration: none;
+ font-weight: 500;
+ font-size: 1rem;
+ border: 1.5px solid var(--aubergine);
+ display: inline-flex;
+ align-items: center;
+ gap: 0.6rem;
+ transition: all 0.25s;
+}
+.btn-secondary:hover { background: var(--aubergine); color: var(--cream); }
+
+.hero-meta {
+ display: flex;
+ gap: 2rem;
+ flex-wrap: wrap;
+ padding-top: 1.5rem;
+ border-top: 1px solid var(--border);
+ max-width: 540px;
+}
+.hero-meta-item { font-size: 0.85rem; color: var(--muted); }
+.hero-meta-item strong { display: block; color: var(--aubergine); font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 500; }
+
+/* Hero visual */
+.hero-visual {
+ position: relative;
+ aspect-ratio: 4/5;
+ max-width: 480px;
+ justify-self: end;
+}
+.hero-card {
+ position: absolute;
+ background: white;
+ border-radius: 24px;
+ padding: 1.5rem;
+ box-shadow: var(--shadow-lg);
+ border: 1px solid var(--border);
+}
+.hero-card-main {
+ inset: 0;
+ background: linear-gradient(160deg, var(--lavender) 0%, var(--lavender-soft) 60%, var(--cream-warm) 100%);
+ border: none;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 2.5rem;
+}
+.hero-card-main .quote {
+ font-family: 'Fraunces', serif;
+ font-style: italic;
+ font-size: 1.6rem;
+ line-height: 1.3;
+ color: var(--aubergine);
+ font-weight: 400;
+}
+.hero-card-main .quote-author {
+ font-size: 0.9rem;
+ color: var(--aubergine-soft);
+ margin-top: 1rem;
+}
+.hero-card-quiz {
+ bottom: -30px;
+ right: -30px;
+ width: 220px;
+ background: white;
+ text-align: center;
+ transform: rotate(4deg);
+ transition: transform 0.3s;
+}
+.hero-card-quiz:hover { transform: rotate(0deg) scale(1.03); }
+.hero-card-quiz .quiz-icon {
+ width: 48px; height: 48px;
+ border-radius: 50%;
+ background: var(--terracotta);
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 1.5rem;
+ margin: 0 auto 0.75rem;
+}
+.hero-card-quiz strong {
+ display: block;
+ font-family: 'Fraunces', serif;
+ font-size: 1.1rem;
+ color: var(--aubergine);
+ margin-bottom: 0.25rem;
+}
+.hero-card-quiz span { font-size: 0.85rem; color: var(--muted); display: block; margin-bottom: 1rem; }
+.hero-card-quiz a {
+ display: inline-block;
+ background: var(--aubergine);
+ color: var(--cream);
+ padding: 0.5rem 1rem;
+ border-radius: 100px;
+ text-decoration: none;
+ font-size: 0.85rem;
+ font-weight: 500;
+}
+
+@media (max-width: 900px) {
+ .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+ .hero-visual { max-width: 380px; justify-self: center; margin-top: 1rem; }
+ .hero-card-quiz { right: 0; }
+}
+
+/* ============ TRUST BAR ============ */
+.trust-bar {
+ background: var(--aubergine);
+ color: var(--cream);
+ padding: 1.5rem 2rem;
+}
+.trust-inner {
+ max-width: 1320px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 2rem;
+ align-items: center;
+}
+.trust-item {
+ display: flex;
+ align-items: center;
+ gap: 0.75rem;
+ font-size: 0.95rem;
+ opacity: 0.92;
+}
+.trust-item .icon {
+ width: 24px; height: 24px;
+ background: var(--lavender);
+ color: var(--aubergine);
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 0.8rem;
+ font-weight: 700;
+ flex-shrink: 0;
+}
+
+/* ============ SECTIONS ============ */
+section { padding: 6rem 2rem; }
+.container { max-width: 1320px; margin: 0 auto; }
+.container-narrow { max-width: 880px; margin: 0 auto; }
+
+.section-eyebrow {
+ display: inline-block;
+ font-size: 0.8rem;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ color: var(--terracotta);
+ font-weight: 600;
+ margin-bottom: 1rem;
+}
+
+.section-title {
+ font-family: 'Fraunces', serif;
+ font-size: clamp(2rem, 4vw, 3.2rem);
+ line-height: 1.08;
+ letter-spacing: -0.02em;
+ font-weight: 400;
+ color: var(--aubergine);
+ margin-bottom: 1.25rem;
+}
+.section-title em { font-style: italic; color: var(--terracotta); font-weight: 300; }
+
+.section-lead {
+ font-size: 1.15rem;
+ color: var(--muted);
+ max-width: 680px;
+ margin-bottom: 3rem;
+}
+
+/* ============ PROBLEM ============ */
+.problem { background: var(--cream); position: relative; }
+.problem-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+ gap: 1.5rem;
+ margin-top: 2.5rem;
+}
+.problem-card {
+ background: white;
+ padding: 2rem;
+ border-radius: 20px;
+ border: 1px solid var(--border);
+ transition: all 0.3s;
+}
+.problem-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.problem-emoji {
+ font-size: 1.8rem;
+ margin-bottom: 1rem;
+ display: block;
+}
+.problem-card h3 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.3rem;
+ font-weight: 500;
+ color: var(--aubergine);
+ margin-bottom: 0.6rem;
+ letter-spacing: -0.01em;
+}
+.problem-card p { color: var(--muted); font-size: 0.95rem; }
+
+.problem-cta {
+ margin-top: 3rem;
+ text-align: center;
+}
+.problem-cta p {
+ font-family: 'Fraunces', serif;
+ font-style: italic;
+ font-size: 1.4rem;
+ color: var(--aubergine);
+ margin-bottom: 1.5rem;
+}
+
+/* ============ QUIZ ============ */
+.quiz-section {
+ background: linear-gradient(180deg, var(--bg) 0%, var(--lavender-soft) 100%);
+ position: relative;
+ padding-top: 5rem;
+ padding-bottom: 5rem;
+}
+
+.quiz-intro {
+ text-align: center;
+ max-width: 720px;
+ margin: 0 auto 3rem;
+}
+
+.quiz-widget {
+ background: white;
+ border-radius: 32px;
+ box-shadow: var(--shadow-lg);
+ border: 1px solid var(--border);
+ overflow: hidden;
+ max-width: 760px;
+ margin: 0 auto;
+}
+
+.quiz-progress {
+ height: 6px;
+ background: var(--lavender-soft);
+ position: relative;
+}
+.quiz-progress-bar {
+ height: 100%;
+ background: linear-gradient(90deg, var(--terracotta), var(--aubergine-soft));
+ width: 0%;
+ transition: width 0.4s ease;
+}
+
+.quiz-body { padding: 3rem 2.5rem; }
+
+.quiz-step { display: none; }
+.quiz-step.active { display: block; animation: fadeUp 0.4s ease; }
+
+@keyframes fadeUp {
+ from { opacity: 0; transform: translateY(12px); }
+ to { opacity: 1; transform: translateY(0); }
+}
+
+.quiz-step-label {
+ font-size: 0.8rem;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ color: var(--terracotta);
+ font-weight: 600;
+ margin-bottom: 0.75rem;
+}
+
+.quiz-question {
+ font-family: 'Fraunces', serif;
+ font-size: clamp(1.5rem, 3vw, 2rem);
+ line-height: 1.15;
+ color: var(--aubergine);
+ margin-bottom: 2rem;
+ font-weight: 500;
+ letter-spacing: -0.015em;
+}
+
+.quiz-options {
+ display: flex;
+ flex-direction: column;
+ gap: 0.75rem;
+}
+
+.quiz-option {
+ background: var(--cream);
+ border: 1.5px solid transparent;
+ padding: 1.1rem 1.3rem;
+ border-radius: 14px;
+ text-align: left;
+ cursor: pointer;
+ font-family: inherit;
+ font-size: 1rem;
+ color: var(--ink);
+ transition: all 0.2s;
+ display: flex;
+ align-items: center;
+ gap: 0.75rem;
+}
+.quiz-option:hover {
+ background: var(--lavender-soft);
+ border-color: var(--lavender-deep);
+ transform: translateX(2px);
+}
+.quiz-option .dot {
+ width: 12px;
+ height: 12px;
+ border-radius: 50%;
+ border: 2px solid var(--lavender-deep);
+ flex-shrink: 0;
+ transition: all 0.2s;
+}
+.quiz-option:hover .dot { background: var(--terracotta); border-color: var(--terracotta); }
+
+.quiz-nav {
+ margin-top: 2rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.quiz-back {
+ background: none;
+ border: none;
+ color: var(--muted);
+ font-family: inherit;
+ font-size: 0.95rem;
+ cursor: pointer;
+ padding: 0.5rem;
+}
+.quiz-back:hover { color: var(--aubergine); }
+.quiz-counter { font-size: 0.85rem; color: var(--muted); }
+
+/* Quiz result */
+.quiz-result { display: none; padding: 3rem 2.5rem; text-align: left; }
+.quiz-result.active { display: block; animation: fadeUp 0.5s ease; }
+
+/* Email Gate */
+.quiz-email-gate { display: none; padding: 3rem 2.5rem; text-align: left; }
+.quiz-email-gate.active { display: block; animation: fadeUp 0.5s ease; }
+.email-gate-icon {
+ width: 64px; height: 64px;
+ background: var(--lavender-soft);
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 2rem;
+ margin-bottom: 1.25rem;
+}
+.email-gate-sub {
+ color: var(--muted);
+ font-size: 1rem;
+ line-height: 1.6;
+ margin-bottom: 1.75rem;
+}
+.email-gate-form .form-row { margin-bottom: 0.85rem; }
+.email-gate-form input {
+ width: 100%;
+ padding: 0.95rem 1.1rem;
+ border: 1.5px solid var(--border);
+ border-radius: 12px;
+ font-family: inherit;
+ font-size: 1rem;
+ color: var(--ink);
+ background: var(--cream);
+ transition: all 0.2s;
+}
+.email-gate-form input:focus {
+ outline: none;
+ border-color: var(--aubergine);
+ background: white;
+}
+.email-gate-form .form-submit {
+ width: 100%;
+ background: var(--aubergine);
+ color: var(--cream);
+ padding: 1.1rem;
+ border: none;
+ border-radius: 100px;
+ font-family: inherit;
+ font-size: 1rem;
+ font-weight: 500;
+ cursor: pointer;
+ transition: all 0.25s;
+ margin-top: 0.5rem;
+}
+.email-gate-form .form-submit:hover { background: var(--terracotta); transform: translateY(-1px); }
+.email-gate-privacy {
+ font-size: 0.8rem;
+ color: var(--muted);
+ margin-top: 0.85rem;
+ text-align: center;
+}
+.email-gate-urgency {
+ background: #f8e8d8;
+ border-left: 3px solid var(--terracotta);
+ padding: 1rem 1.25rem;
+ border-radius: 8px;
+ margin-top: 1.5rem;
+ font-size: 0.92rem;
+ color: var(--ink);
+ line-height: 1.55;
+}
+.email-gate-urgency strong { color: var(--terracotta); }
+
+/* Result urgency banner */
+.result-urgency {
+ background: linear-gradient(135deg, var(--terracotta) 0%, #a04936 100%);
+ color: white;
+ padding: 1.5rem 1.6rem;
+ border-radius: 16px;
+ margin-bottom: 1.5rem;
+}
+.result-urgency h4 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.2rem;
+ margin-bottom: 0.5rem;
+ font-weight: 600;
+}
+.result-urgency p {
+ font-size: 0.95rem;
+ line-height: 1.55;
+ margin-bottom: 1rem;
+ opacity: 0.95;
+}
+.result-urgency .urgency-phone {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.5rem;
+ background: white;
+ color: var(--terracotta);
+ padding: 0.7rem 1.2rem;
+ border-radius: 100px;
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 1rem;
+ transition: transform 0.2s;
+}
+.result-urgency .urgency-phone:hover { transform: translateY(-1px); }
+.result-badge {
+ display: inline-block;
+ padding: 0.4rem 0.9rem;
+ border-radius: 100px;
+ font-size: 0.85rem;
+ font-weight: 600;
+ margin-bottom: 1rem;
+}
+.badge-low { background: #e8f0e3; color: #4a6b3a; }
+.badge-med { background: var(--lavender-soft); color: var(--aubergine); }
+.badge-high { background: #f5dcc8; color: var(--terracotta); }
+.badge-urgent { background: #f8d4cc; color: #8a3a28; }
+
+.result-title {
+ font-family: 'Fraunces', serif;
+ font-size: 2rem;
+ line-height: 1.15;
+ color: var(--aubergine);
+ margin-bottom: 1rem;
+ letter-spacing: -0.015em;
+}
+.result-body {
+ color: var(--ink);
+ font-size: 1.05rem;
+ line-height: 1.7;
+ margin-bottom: 1.5rem;
+}
+.result-recommendations {
+ background: var(--cream);
+ border-radius: 16px;
+ padding: 1.5rem;
+ margin-bottom: 2rem;
+}
+.result-recommendations h4 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.15rem;
+ color: var(--aubergine);
+ margin-bottom: 0.75rem;
+ font-weight: 600;
+}
+.result-recommendations ul { list-style: none; }
+.result-recommendations li {
+ padding: 0.4rem 0;
+ padding-left: 1.5rem;
+ position: relative;
+ color: var(--ink);
+ font-size: 0.97rem;
+}
+.result-recommendations li::before {
+ content: "✓";
+ position: absolute;
+ left: 0;
+ color: var(--terracotta);
+ font-weight: 700;
+}
+
+.result-ctas {
+ display: flex;
+ gap: 1rem;
+ flex-wrap: wrap;
+ margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+ .quiz-body, .quiz-result { padding: 2rem 1.5rem; }
+ .quiz-question { font-size: 1.35rem; }
+}
+
+/* ============ ABA SERVICES ============ */
+.aba-section {
+ background: var(--bg);
+}
+
+.aba-hero {
+ display: grid;
+ grid-template-columns: 1fr 1.1fr;
+ gap: 4rem;
+ align-items: center;
+ margin-bottom: 5rem;
+}
+
+@media (max-width: 880px) {
+ .aba-hero { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+.aba-features {
+ display: flex;
+ flex-direction: column;
+ gap: 1.25rem;
+ margin-top: 2rem;
+}
+.aba-feature {
+ display: flex;
+ gap: 1rem;
+ align-items: flex-start;
+}
+.aba-feature-icon {
+ width: 40px; height: 40px;
+ border-radius: 12px;
+ background: var(--lavender-soft);
+ color: var(--aubergine);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Fraunces', serif;
+ font-weight: 600;
+ font-size: 1.1rem;
+ flex-shrink: 0;
+}
+.aba-feature h4 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.15rem;
+ color: var(--aubergine);
+ margin-bottom: 0.25rem;
+ font-weight: 600;
+}
+.aba-feature p {
+ color: var(--muted);
+ font-size: 0.95rem;
+}
+
+/* Pricing */
+.pricing-card {
+ background: linear-gradient(155deg, var(--aubergine) 0%, var(--aubergine-soft) 100%);
+ color: var(--cream);
+ border-radius: 28px;
+ padding: 2.5rem;
+ position: relative;
+ overflow: hidden;
+}
+.pricing-card::before {
+ content: "";
+ position: absolute;
+ top: -80px; right: -80px;
+ width: 240px; height: 240px;
+ background: var(--lavender);
+ border-radius: 50%;
+ opacity: 0.15;
+}
+.pricing-card::after {
+ content: "";
+ position: absolute;
+ bottom: -100px; left: -60px;
+ width: 200px; height: 200px;
+ background: var(--terracotta);
+ border-radius: 50%;
+ opacity: 0.12;
+}
+
+.pricing-card-label {
+ display: inline-block;
+ background: var(--lavender);
+ color: var(--aubergine);
+ padding: 0.3rem 0.8rem;
+ border-radius: 100px;
+ font-size: 0.8rem;
+ font-weight: 600;
+ letter-spacing: 0.05em;
+ text-transform: uppercase;
+ margin-bottom: 1.5rem;
+ position: relative;
+ z-index: 1;
+}
+
+.pricing-card h3 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.7rem;
+ margin-bottom: 2rem;
+ position: relative;
+ z-index: 1;
+ font-weight: 500;
+ letter-spacing: -0.01em;
+}
+
+.price-tier {
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+ padding: 1.25rem 0;
+ border-bottom: 1px solid rgba(217, 205, 227, 0.18);
+ position: relative;
+ z-index: 1;
+}
+.price-tier:last-of-type { border-bottom: none; }
+
+.price-tier-info { flex: 1; }
+.price-tier-title { font-weight: 500; font-size: 1.05rem; margin-bottom: 0.2rem; }
+.price-tier-desc { font-size: 0.85rem; opacity: 0.7; }
+
+.price-tier-amount {
+ font-family: 'Fraunces', serif;
+ font-size: 2.2rem;
+ font-weight: 500;
+ letter-spacing: -0.02em;
+}
+.price-tier-amount .per { font-size: 0.85rem; opacity: 0.7; font-family: 'DM Sans', sans-serif; }
+
+.price-best {
+ background: rgba(217, 205, 227, 0.1);
+ margin: 0 -1rem;
+ padding: 1.25rem 1rem;
+ border-radius: 14px;
+ border: 1.5px solid var(--terracotta);
+}
+.price-best .best-tag {
+ background: var(--terracotta);
+ color: white;
+ font-size: 0.7rem;
+ font-weight: 700;
+ padding: 0.2rem 0.5rem;
+ border-radius: 4px;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ margin-left: 0.6rem;
+ vertical-align: middle;
+}
+
+.pricing-note {
+ font-size: 0.85rem;
+ opacity: 0.85;
+ margin-top: 1.5rem;
+ font-style: italic;
+ position: relative;
+ z-index: 1;
+}
+
+/* Pricing floor card */
+.pricing-floor {
+ background: rgba(217, 205, 227, 0.12);
+ border: 1.5px solid var(--lavender);
+ border-radius: 18px;
+ padding: 1.75rem;
+ margin-bottom: 1.5rem;
+ text-align: center;
+ position: relative;
+ z-index: 1;
+}
+.floor-label {
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 0.12em;
+ opacity: 0.85;
+ margin-bottom: 0.5rem;
+}
+.floor-amount {
+ font-family: 'Fraunces', serif;
+ font-size: 4rem;
+ font-weight: 500;
+ line-height: 1;
+ letter-spacing: -0.03em;
+ color: var(--lavender);
+}
+.floor-amount .per {
+ font-family: 'DM Sans', sans-serif;
+ font-size: 1.1rem;
+ opacity: 0.75;
+ margin-left: 0.2rem;
+}
+.floor-desc {
+ font-size: 0.9rem;
+ opacity: 0.85;
+ margin-top: 0.5rem;
+}
+.pricing-included {
+ position: relative;
+ z-index: 1;
+ margin-bottom: 1rem;
+}
+.pricing-included h4 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.05rem;
+ margin-bottom: 0.75rem;
+ font-weight: 600;
+ color: var(--lavender);
+}
+.pricing-included ul { list-style: none; padding: 0; }
+.pricing-included li {
+ padding: 0.45rem 0;
+ padding-left: 1.6rem;
+ position: relative;
+ font-size: 0.93rem;
+ opacity: 0.95;
+ line-height: 1.45;
+}
+.pricing-included li::before {
+ content: "✓";
+ position: absolute;
+ left: 0;
+ color: var(--lavender);
+ font-weight: 700;
+}
+
+/* Pricing Modal Gate */
+.pricing-modal {
+ display: none;
+ position: fixed;
+ inset: 0;
+ background: rgba(36, 25, 50, 0.7);
+ backdrop-filter: blur(8px);
+ -webkit-backdrop-filter: blur(8px);
+ z-index: 200;
+ align-items: center;
+ justify-content: center;
+ padding: 1.5rem;
+ animation: fadeUp 0.25s ease;
+}
+.pricing-modal.open { display: flex; }
+.pricing-modal-card {
+ background: white;
+ border-radius: 28px;
+ padding: 2.5rem;
+ max-width: 520px;
+ width: 100%;
+ max-height: 90vh;
+ overflow-y: auto;
+ position: relative;
+ box-shadow: var(--shadow-lg);
+}
+.pricing-modal-close {
+ position: absolute;
+ top: 1rem;
+ right: 1rem;
+ background: none;
+ border: none;
+ font-size: 1.5rem;
+ color: var(--muted);
+ cursor: pointer;
+ width: 36px;
+ height: 36px;
+ border-radius: 50%;
+ transition: background 0.2s;
+}
+.pricing-modal-close:hover { background: var(--cream); color: var(--ink); }
+.pricing-modal-card h3 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.7rem;
+ color: var(--aubergine);
+ margin-bottom: 0.5rem;
+ letter-spacing: -0.015em;
+ font-weight: 500;
+ line-height: 1.15;
+}
+.pricing-modal-card .modal-sub {
+ color: var(--muted);
+ font-size: 0.97rem;
+ margin-bottom: 1.5rem;
+ line-height: 1.55;
+}
+.pricing-modal-card .modal-deliverable {
+ background: var(--lavender-soft);
+ border-radius: 12px;
+ padding: 1rem 1.2rem;
+ margin-bottom: 1.5rem;
+}
+.pricing-modal-card .modal-deliverable strong {
+ color: var(--aubergine);
+ display: block;
+ margin-bottom: 0.4rem;
+ font-family: 'Fraunces', serif;
+ font-size: 1rem;
+}
+.pricing-modal-card .modal-deliverable ul {
+ list-style: none; padding: 0;
+}
+.pricing-modal-card .modal-deliverable li {
+ padding: 0.25rem 0;
+ padding-left: 1.4rem;
+ position: relative;
+ font-size: 0.88rem;
+ color: var(--ink);
+}
+.pricing-modal-card .modal-deliverable li::before {
+ content: "→";
+ position: absolute;
+ left: 0;
+ color: var(--terracotta);
+ font-weight: 700;
+}
+.pricing-modal-success {
+ display: none;
+ text-align: center;
+ padding: 1.5rem 0;
+}
+.pricing-modal-success.show { display: block; }
+.pricing-modal-success .check-circle {
+ width: 64px;
+ height: 64px;
+ border-radius: 50%;
+ background: #e8f0e3;
+ color: #4a6b3a;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 2rem;
+ margin: 0 auto 1rem;
+}
+
+/* ============ QUIZ B (BEHAVIOR / COMMUNICATION) ============ */
+.qb-section {
+ background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
+ padding: 6rem 2rem;
+ position: relative;
+ overflow: hidden;
+}
+.qb-section::before {
+ content: "";
+ position: absolute;
+ top: -100px; right: -100px;
+ width: 400px; height: 400px;
+ background: radial-gradient(circle, var(--lavender) 0%, transparent 60%);
+ opacity: 0.4;
+ pointer-events: none;
+}
+.qb-intro {
+ text-align: center;
+ max-width: 760px;
+ margin: 0 auto 3rem;
+ position: relative;
+ z-index: 1;
+}
+.qb-widget {
+ background: white;
+ border-radius: 32px;
+ box-shadow: var(--shadow-lg);
+ border: 1px solid var(--border);
+ overflow: hidden;
+ max-width: 780px;
+ margin: 0 auto;
+ position: relative;
+ z-index: 1;
+}
+.qb-progress-bar {
+ height: 100%;
+ background: linear-gradient(90deg, var(--terracotta), var(--aubergine-soft));
+ width: 0%;
+ transition: width 0.4s ease;
+}
+.qb-body { padding: 3rem 2.5rem 2rem; }
+.qb-step { display: none; }
+.qb-step.active { display: block; animation: fadeUp 0.4s ease; }
+.qb-step-label {
+ display: inline-block;
+ font-size: 0.78rem;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ color: var(--terracotta);
+ font-weight: 600;
+ margin-bottom: 0.85rem;
+}
+.qb-question {
+ font-family: 'Fraunces', serif;
+ font-size: clamp(1.4rem, 2.8vw, 1.85rem);
+ line-height: 1.2;
+ color: var(--aubergine);
+ margin-bottom: 1.75rem;
+ font-weight: 500;
+ letter-spacing: -0.015em;
+}
+.qb-options {
+ display: flex;
+ flex-direction: column;
+ gap: 0.6rem;
+ margin-bottom: 1rem;
+}
+.qb-option {
+ background: var(--cream);
+ border: 1.5px solid transparent;
+ padding: 1rem 1.2rem;
+ border-radius: 14px;
+ text-align: left;
+ cursor: pointer;
+ font-family: inherit;
+ font-size: 0.97rem;
+ color: var(--ink);
+ transition: all 0.2s;
+ line-height: 1.4;
+}
+.qb-option:hover:not(.selected):not(.disabled) {
+ background: var(--lavender-soft);
+ border-color: var(--lavender-deep);
+ transform: translateX(2px);
+}
+.qb-option.selected {
+ background: var(--lavender-soft);
+ border-color: var(--aubergine);
+ box-shadow: 0 4px 14px rgba(61, 42, 82, 0.12);
+}
+.qb-option.disabled {
+ opacity: 0.45;
+ cursor: not-allowed;
+ pointer-events: none;
+}
+.qb-reveal {
+ display: none;
+ background: linear-gradient(135deg, var(--lavender-soft) 0%, var(--cream-warm) 100%);
+ padding: 1.5rem 1.5rem 1.4rem;
+ border-radius: 18px;
+ margin-top: 1rem;
+ border-left: 3px solid var(--terracotta);
+ animation: fadeUp 0.4s ease;
+}
+.qb-reveal.show { display: block; }
+.qb-reveal-badge {
+ font-size: 0.8rem;
+ font-weight: 700;
+ color: var(--terracotta);
+ letter-spacing: 0.05em;
+ margin-bottom: 0.6rem;
+ text-transform: uppercase;
+}
+.qb-reveal-text {
+ font-family: 'Fraunces', serif;
+ font-style: italic;
+ font-size: 1.05rem;
+ line-height: 1.5;
+ color: var(--aubergine);
+ margin-bottom: 1.1rem;
+}
+.qb-continue {
+ background: var(--aubergine);
+ color: var(--cream);
+ padding: 0.7rem 1.3rem;
+ border-radius: 100px;
+ border: none;
+ font-family: inherit;
+ font-size: 0.93rem;
+ font-weight: 500;
+ cursor: pointer;
+ transition: all 0.2s;
+}
+.qb-continue:hover {
+ background: var(--terracotta);
+ transform: translateY(-1px);
+}
+.qb-counter {
+ text-align: center;
+ font-size: 0.82rem;
+ color: var(--muted);
+ padding: 0 0 1.5rem;
+}
+
+/* QB Email Gate */
+.qb-email-gate { display: none; padding: 3rem 2.5rem; text-align: left; }
+.qb-email-gate.active { display: block; animation: fadeUp 0.5s ease; }
+
+/* QB Result */
+.qb-result { display: none; padding: 3rem 2.5rem; }
+.qb-result.active { display: block; animation: fadeUp 0.5s ease; }
+.qb-result-badge {
+ display: inline-block;
+ background: var(--lavender);
+ color: var(--aubergine);
+ padding: 0.4rem 0.9rem;
+ border-radius: 100px;
+ font-size: 0.78rem;
+ font-weight: 700;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ margin-bottom: 1rem;
+}
+.qb-result-title {
+ font-family: 'Fraunces', serif;
+ font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+ line-height: 1.1;
+ color: var(--aubergine);
+ margin-bottom: 0.6rem;
+ letter-spacing: -0.02em;
+ font-weight: 500;
+}
+.qb-result-tagline {
+ font-family: 'Fraunces', serif;
+ font-style: italic;
+ font-size: 1.15rem;
+ color: var(--terracotta);
+ margin-bottom: 2rem;
+ line-height: 1.4;
+}
+.qb-result-section {
+ margin-bottom: 1.5rem;
+}
+.qb-result-section h4 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.05rem;
+ color: var(--aubergine);
+ margin-bottom: 0.5rem;
+ font-weight: 600;
+}
+.qb-result-section p {
+ color: var(--ink);
+ line-height: 1.65;
+ font-size: 1rem;
+}
+.qb-result-callout {
+ background: var(--cream);
+ padding: 1.25rem 1.4rem;
+ border-radius: 16px;
+ border-left: 3px solid var(--terracotta);
+ margin-top: 2rem;
+}
+.qb-result-callout h4 { color: var(--terracotta); }
+.qb-result-ctas {
+ display: flex;
+ gap: 0.75rem;
+ flex-wrap: wrap;
+ margin: 2rem 0 1.25rem;
+}
+.qb-share-btn {
+ background: var(--lavender) !important;
+ color: var(--aubergine) !important;
+ border-color: var(--lavender) !important;
+}
+.qb-share-btn:hover {
+ background: var(--lavender-deep) !important;
+ color: var(--cream) !important;
+}
+.qb-result-disclaimer {
+ font-size: 0.82rem;
+ color: var(--muted);
+ font-style: italic;
+ line-height: 1.5;
+ padding-top: 1rem;
+ border-top: 1px solid var(--border);
+}
+
+@media (max-width: 600px) {
+ .qb-body, .qb-email-gate, .qb-result { padding: 2rem 1.5rem; }
+ .qb-question { font-size: 1.3rem; }
+}
+.why-now-section { background: var(--cream); padding: 5rem 2rem; }
+.why-now-grid {
+ display: grid;
+ grid-template-columns: 1.1fr 1fr;
+ gap: 4rem;
+ align-items: center;
+}
+@media (max-width: 880px) { .why-now-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+.why-now-stats {
+ display: grid;
+ gap: 1rem;
+}
+.stat-card {
+ background: white;
+ border-radius: 18px;
+ padding: 1.5rem 1.75rem;
+ border: 1px solid var(--border);
+ display: flex;
+ align-items: center;
+ gap: 1.5rem;
+}
+.stat-num {
+ font-family: 'Fraunces', serif;
+ font-size: 2.4rem;
+ line-height: 1;
+ letter-spacing: -0.02em;
+ color: var(--terracotta);
+ font-weight: 500;
+ flex-shrink: 0;
+ min-width: 110px;
+}
+.stat-label {
+ color: var(--ink);
+ font-size: 0.97rem;
+ line-height: 1.45;
+}
+
+/* ============ PSYCHOLOGY ============ */
+.psych-section { background: var(--bg); }
+.services-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 1.5rem;
+ margin-top: 3rem;
+}
+.service-card {
+ background: white;
+ border: 1px solid var(--border);
+ border-radius: 20px;
+ padding: 2rem;
+ transition: all 0.3s;
+ position: relative;
+ overflow: hidden;
+}
+.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--lavender-deep); }
+
+.service-icon {
+ width: 56px; height: 56px;
+ border-radius: 14px;
+ background: var(--lavender-soft);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 1.5rem;
+ margin-bottom: 1.25rem;
+}
+.service-card h3 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.3rem;
+ color: var(--aubergine);
+ margin-bottom: 0.5rem;
+ font-weight: 600;
+ letter-spacing: -0.01em;
+}
+.service-card .service-meta {
+ font-size: 0.8rem;
+ color: var(--terracotta);
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ font-weight: 600;
+ margin-bottom: 0.75rem;
+}
+.service-card p {
+ color: var(--muted);
+ font-size: 0.95rem;
+ line-height: 1.6;
+}
+
+/* ============ APPROACH (Aldeia) ============ */
+.approach-section {
+ background: var(--aubergine);
+ color: var(--cream);
+ position: relative;
+ overflow: hidden;
+}
+.approach-section::before {
+ content: "";
+ position: absolute;
+ top: -200px; left: -200px;
+ width: 600px; height: 600px;
+ background: radial-gradient(circle, var(--lavender) 0%, transparent 65%);
+ opacity: 0.1;
+}
+.approach-section::after {
+ content: "";
+ position: absolute;
+ bottom: -200px; right: -200px;
+ width: 600px; height: 600px;
+ background: radial-gradient(circle, var(--terracotta) 0%, transparent 65%);
+ opacity: 0.12;
+}
+
+.approach-section .container { position: relative; z-index: 1; }
+.approach-section .section-title { color: var(--cream); }
+.approach-section .section-title em { color: var(--lavender); }
+.approach-section .section-lead { color: rgba(250, 245, 237, 0.75); }
+.approach-section .section-eyebrow { color: var(--lavender); }
+
+.approach-pillars {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+ gap: 2rem;
+ margin-top: 3rem;
+}
+.pillar {
+ padding: 2rem 0;
+ border-top: 1px solid rgba(217, 205, 227, 0.2);
+}
+.pillar-num {
+ font-family: 'Fraunces', serif;
+ font-size: 2.2rem;
+ color: var(--lavender);
+ margin-bottom: 1rem;
+ font-style: italic;
+ font-weight: 300;
+}
+.pillar h4 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.4rem;
+ margin-bottom: 0.75rem;
+ color: var(--cream);
+ letter-spacing: -0.01em;
+ font-weight: 500;
+}
+.pillar p {
+ color: rgba(250, 245, 237, 0.75);
+ font-size: 0.97rem;
+ line-height: 1.65;
+}
+
+/* ============ TESTIMONIALS ============ */
+.testimonials {
+ background: var(--cream);
+}
+.testimonials-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 1.5rem;
+ margin-top: 3rem;
+}
+.testimonial {
+ background: white;
+ padding: 2.5rem;
+ border-radius: 24px;
+ position: relative;
+ border: 1px solid var(--border);
+}
+.testimonial-mark {
+ font-family: 'Fraunces', serif;
+ font-size: 4rem;
+ line-height: 1;
+ color: var(--lavender);
+ margin-bottom: -1rem;
+}
+.testimonial-quote {
+ font-family: 'Fraunces', serif;
+ font-size: 1.15rem;
+ line-height: 1.5;
+ color: var(--ink);
+ font-style: italic;
+ margin-bottom: 1.5rem;
+}
+.testimonial-author {
+ display: flex;
+ align-items: center;
+ gap: 0.75rem;
+}
+.testimonial-avatar {
+ width: 44px; height: 44px;
+ border-radius: 50%;
+ background: var(--lavender);
+ color: var(--aubergine);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Fraunces', serif;
+ font-size: 1.2rem;
+ font-weight: 600;
+}
+.testimonial-name { font-weight: 600; color: var(--aubergine); font-size: 0.95rem; }
+.testimonial-meta { font-size: 0.85rem; color: var(--muted); }
+
+/* ============ ABOUT ============ */
+.about-section { background: var(--bg); }
+.about-grid {
+ display: grid;
+ grid-template-columns: 1fr 1.3fr;
+ gap: 4rem;
+ align-items: center;
+}
+@media (max-width: 880px) { .about-grid { grid-template-columns: 1fr; } }
+
+.about-visual {
+ position: relative;
+ aspect-ratio: 4/5;
+ border-radius: 28px;
+ background: linear-gradient(160deg, var(--lavender) 0%, var(--cream-warm) 100%);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 3rem 2rem;
+ overflow: hidden;
+ gap: 2rem;
+}
+.about-visual::before {
+ content: "";
+ position: absolute;
+ top: 15%; left: 50%;
+ transform: translateX(-50%);
+ width: 80%;
+ aspect-ratio: 1;
+ background: radial-gradient(circle, white 0%, transparent 65%);
+ opacity: 0.55;
+}
+.about-visual-logo {
+ width: 85%;
+ max-width: 380px;
+ height: auto;
+ position: relative;
+ z-index: 1;
+}
+.about-visual-quote {
+ font-family: 'Fraunces', serif;
+ font-style: italic;
+ font-size: 1.35rem;
+ color: var(--aubergine);
+ text-align: center;
+ line-height: 1.35;
+ position: relative;
+ z-index: 1;
+}
+
+.credentials {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.6rem;
+ margin: 2rem 0;
+}
+.credential-chip {
+ background: var(--lavender-soft);
+ color: var(--aubergine);
+ padding: 0.4rem 0.9rem;
+ border-radius: 100px;
+ font-size: 0.85rem;
+ font-weight: 500;
+}
+
+/* ============ FAQ ============ */
+.faq-section { background: var(--cream); }
+.faq-list { margin-top: 3rem; }
+.faq-item {
+ background: white;
+ border: 1px solid var(--border);
+ border-radius: 16px;
+ margin-bottom: 1rem;
+ overflow: hidden;
+ transition: all 0.25s;
+}
+.faq-item:hover { border-color: var(--lavender-deep); }
+.faq-item[open] { box-shadow: var(--shadow-sm); }
+
+.faq-q {
+ padding: 1.4rem 1.6rem;
+ font-family: 'Fraunces', serif;
+ font-size: 1.15rem;
+ font-weight: 600;
+ color: var(--aubergine);
+ cursor: pointer;
+ list-style: none;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 1rem;
+}
+.faq-q::-webkit-details-marker { display: none; }
+.faq-q::after {
+ content: "+";
+ font-size: 1.5rem;
+ color: var(--terracotta);
+ font-weight: 400;
+ transition: transform 0.25s;
+ flex-shrink: 0;
+}
+.faq-item[open] .faq-q::after { transform: rotate(45deg); }
+.faq-a {
+ padding: 0 1.6rem 1.4rem;
+ color: var(--ink);
+ line-height: 1.65;
+}
+
+/* ============ CONTACT ============ */
+.contact-section {
+ background: linear-gradient(180deg, var(--bg) 0%, var(--lavender-soft) 100%);
+ position: relative;
+}
+.contact-grid {
+ display: grid;
+ grid-template-columns: 1fr 1.3fr;
+ gap: 4rem;
+}
+@media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; } }
+
+.contact-info-card {
+ background: var(--aubergine);
+ color: var(--cream);
+ border-radius: 28px;
+ padding: 2.5rem;
+}
+.contact-info-card h3 {
+ font-family: 'Fraunces', serif;
+ font-size: 1.8rem;
+ margin-bottom: 1rem;
+ font-weight: 500;
+ letter-spacing: -0.01em;
+}
+.contact-info-card > p {
+ color: rgba(250, 245, 237, 0.78);
+ font-size: 0.97rem;
+ margin-bottom: 2rem;
+}
+.contact-method {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+ padding: 1rem 0;
+ border-top: 1px solid rgba(217, 205, 227, 0.18);
+}
+.contact-method-icon {
+ width: 40px; height: 40px;
+ border-radius: 12px;
+ background: var(--lavender);
+ color: var(--aubergine);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 1.2rem;
+ flex-shrink: 0;
+}
+.contact-method strong { display: block; font-size: 0.85rem; opacity: 0.7; margin-bottom: 0.15rem; }
+.contact-method a { color: var(--cream); text-decoration: none; font-size: 1rem; font-weight: 500; }
+.contact-method a:hover { color: var(--lavender); }
+
+.form {
+ background: white;
+ border-radius: 28px;
+ padding: 2.5rem;
+ border: 1px solid var(--border);
+ box-shadow: var(--shadow-sm);
+}
+.form-row { margin-bottom: 1.25rem; }
+.form-row label {
+ display: block;
+ font-size: 0.85rem;
+ font-weight: 600;
+ color: var(--aubergine);
+ margin-bottom: 0.4rem;
+}
+.form-row input, .form-row select, .form-row textarea {
+ width: 100%;
+ padding: 0.85rem 1rem;
+ border: 1.5px solid var(--border);
+ border-radius: 12px;
+ font-family: inherit;
+ font-size: 1rem;
+ color: var(--ink);
+ background: var(--bg);
+ transition: all 0.2s;
+}
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+ outline: none;
+ border-color: var(--aubergine);
+ background: white;
+}
+.form-row textarea { resize: vertical; min-height: 120px; }
+.form-submit {
+ width: 100%;
+ background: var(--aubergine);
+ color: var(--cream);
+ padding: 1.1rem;
+ border: none;
+ border-radius: 100px;
+ font-family: inherit;
+ font-size: 1rem;
+ font-weight: 500;
+ cursor: pointer;
+ transition: all 0.25s;
+ margin-top: 0.5rem;
+}
+.form-submit:hover { background: var(--terracotta); }
+.form-note { font-size: 0.85rem; color: var(--muted); margin-top: 1rem; text-align: center; }
+.form-success {
+ display: none;
+ background: #e8f0e3;
+ color: #4a6b3a;
+ padding: 1rem;
+ border-radius: 12px;
+ margin-top: 1rem;
+ text-align: center;
+}
+.form-success.show { display: block; }
+
+/* ============ FOOTER ============ */
+footer {
+ background: var(--aubergine);
+ color: var(--cream);
+ padding: 4rem 2rem 2rem;
+}
+.footer-grid {
+ max-width: 1320px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1.5fr 1fr 1fr 1fr;
+ gap: 3rem;
+ margin-bottom: 3rem;
+}
+@media (max-width: 880px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+@media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } }
+
+.footer-brand .logo { color: var(--cream); margin-bottom: 1rem; }
+.footer-brand p { color: rgba(250, 245, 237, 0.7); font-size: 0.95rem; line-height: 1.6; max-width: 320px; }
+
+.footer-col h5 {
+ font-family: 'Fraunces', serif;
+ font-size: 1rem;
+ margin-bottom: 1rem;
+ color: var(--lavender);
+ font-weight: 600;
+}
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 0.5rem; }
+.footer-col a { color: rgba(250, 245, 237, 0.7); text-decoration: none; font-size: 0.92rem; transition: color 0.2s; }
+.footer-col a:hover { color: var(--cream); }
+
+.footer-bottom {
+ max-width: 1320px;
+ margin: 0 auto;
+ padding-top: 2rem;
+ border-top: 1px solid rgba(217, 205, 227, 0.15);
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ gap: 1rem;
+ font-size: 0.85rem;
+ color: rgba(250, 245, 237, 0.55);
+}
+
+/* Sticky WhatsApp */
+.whatsapp-float {
+ position: fixed;
+ bottom: 24px;
+ right: 24px;
+ z-index: 90;
+ background: #25d366;
+ color: white;
+ width: 60px; height: 60px;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ box-shadow: var(--shadow-lg);
+ text-decoration: none;
+ font-size: 1.8rem;
+ transition: transform 0.25s;
+}
+.whatsapp-float:hover { transform: scale(1.08); }
+
+/* Utility */
+.text-center { text-align: center; }
+.mt-2 { margin-top: 2rem; }
+
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+ <div class="nav-inner">
+ <a href="#" class="logo">
+ <img src="logo-dark.webp" alt="" class="logo-mark" />
+ Ser Único
+ </a>
+ <ul class="nav-links" id="navLinks">
+ <li><a href="#quiz-comportamento">Quiz Comunicação</a></li>
+ <li><a href="#aba">Intervenção ABA</a></li>
+ <li><a href="#psicologia">Psicologia</a></li>
+ <li><a href="#quiz">Quiz Avaliação</a></li>
+ <li><a href="#faq">Dúvidas</a></li>
+ <li><a href="#contacto" class="nav-cta">Marcar Consulta</a></li>
+ </ul>
+ <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+ <div class="hero-bg">
+ <div class="blob blob-1"></div>
+ <div class="blob blob-2"></div>
+ </div>
+ <div class="hero-inner">
+ <div>
+ <span class="hero-eyebrow">Clínica de Desenvolvimento Infantil · Portugal</span>
+ <h1>O seu instinto<br><em>está certo.</em></h1>
+ <p class="hero-sub">Se algo no seu filho o preocupa, comunicação, comportamento, interação, vale a pena perceber porquê. Faça o nosso <strong>quiz gratuito de 3 minutos</strong> e descubra o estilo de comunicação do seu filho.</p>
+ <div class="hero-ctas">
+ <a href="#quiz-comportamento" class="btn-primary">Fazer Quiz Gratuito <span class="arrow">→</span></a>
+ <a href="#aba" class="btn-secondary">Conhecer a Intervenção ABA</a>
+ </div>
+ <div class="hero-meta">
+ <div class="hero-meta-item"><strong>+10 anos</strong>Em intervenção precoce</div>
+ <div class="hero-meta-item"><strong>IBA</strong>Analistas certificadas</div>
+ <div class="hero-meta-item"><strong>Lisboa e Vale do Tejo</strong>Lisboa e Vale do Tejo</div>
+ </div>
+ </div>
+ <div class="hero-visual">
+ <div class="hero-card hero-card-main">
+ <div>
+ <p class="quote">"Cada criança tem o seu ritmo. O nosso trabalho é compreender o dela, não acelerar, mas acompanhar com método."</p>
+ </div>
+ <p class="quote-author">, Equipa Ser Único</p>
+ </div>
+ <a href="#quiz-comportamento" class="hero-card hero-card-quiz">
+ <div class="quiz-icon">✦</div>
+ <strong>Quiz Gratuito</strong>
+ <span>5 cenários · 3 minutos</span>
+ <span style="background: var(--aubergine); color: var(--cream); padding: 0.5rem 1rem; border-radius: 100px; font-size: 0.85rem; font-weight: 500;">Começar agora</span>
+ </a>
+ </div>
+ </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<div class="trust-bar">
+ <div class="trust-inner">
+ <div class="trust-item"><span class="icon">✓</span> Equipa de Analistas Certificadas (IBA)</div>
+ <div class="trust-item"><span class="icon">✓</span> Clínica, Escola e Domicílio</div>
+ <div class="trust-item"><span class="icon">✓</span> Intervenção Baseada em Evidência</div>
+ <div class="trust-item"><span class="icon">✓</span> Avaliação Inicial Gratuita</div>
+ </div>
+</div>
+
+<!-- ============ QUIZ B: BEHAVIOR AS COMMUNICATION ============ -->
+<section class="qb-section" id="quiz-comportamento">
+ <div class="container">
+ <div class="qb-intro">
+ <span class="section-eyebrow">Quiz Gratuito · 5 cenários · 3 minutos</span>
+ <h2 class="section-title">O que está o seu filho a <em>tentar dizer-lhe?</em></h2>
+ <p class="section-lead" style="margin-left: auto; margin-right: auto;">Cada comportamento é uma forma de comunicação, mesmo quando não há palavras. Faça este quiz e descubra o estilo de comunicação do seu filho, com a lente de quem trabalha com isto todos os dias.</p>
+ </div>
+
+ <div class="qb-widget">
+ <div class="quiz-progress"><div class="qb-progress-bar" id="qbProgressBar"></div></div>
+
+ <div class="qb-body" id="qbBody">
+
+ <!-- Scenario 1 -->
+ <div class="qb-step active" data-step="1">
+ <span class="qb-step-label">Cenário 1 de 5 · Transições</span>
+ <h3 class="qb-question">É hora de sair do parque. Como reage o seu filho normalmente?</h3>
+ <div class="qb-options">
+ <button class="qb-option" data-profile="conector">Pede mais um pouco, mas acaba por vir</button>
+ <button class="qb-option" data-profile="decifrador">Tenho de avisar 3 ou 4 vezes antes de conseguir</button>
+ <button class="qb-option" data-profile="decifrador">Acaba quase sempre em birra ou colapso</button>
+ <button class="qb-option" data-profile="explorador">Foge, esconde-se, ou ignora-me completamente</button>
+ </div>
+ <div class="qb-reveal" id="qb-reveal-1">
+ <div class="qb-reveal-badge">💡 Sabia que…</div>
+ <p class="qb-reveal-text">As transições são uma das tarefas mais difíceis para o cérebro de uma criança, especialmente entre os 18 meses e os 5 anos. Não é teimosia. É o cérebro a pedir tempo para mudar de marcha.</p>
+ <button class="qb-continue" onclick="nextQbStep()">Próximo cenário →</button>
+ </div>
+ </div>
+
+ <!-- Scenario 2 -->
+ <div class="qb-step" data-step="2">
+ <span class="qb-step-label">Cenário 2 de 5 · Comunicação</span>
+ <h3 class="qb-question">O seu filho quer um copo de água. Como pede?</h3>
+ <div class="qb-options">
+ <button class="qb-option" data-profile="conector">Diz "água" ou usa palavras</button>
+ <button class="qb-option" data-profile="decifrador">Puxa-me pela mão até à torneira</button>
+ <button class="qb-option" data-profile="decifrador">Aponta sem som, ou faz um som sem palavra</button>
+ <button class="qb-option" data-profile="decifrador">Chora ou grita até eu adivinhar</button>
+ </div>
+ <div class="qb-reveal" id="qb-reveal-2">
+ <div class="qb-reveal-badge">💡 Sabia que…</div>
+ <p class="qb-reveal-text">Quando uma criança puxa pela mão em vez de pedir, está a usar a estratégia de comunicação mais antiga da humanidade. Funciona, mas limita o desenvolvimento da linguagem. É um dos primeiros sinais que avaliamos.</p>
+ <button class="qb-continue" onclick="nextQbStep()">Próximo cenário →</button>
+ </div>
+ </div>
+
+ <!-- Scenario 3 -->
+ <div class="qb-step" data-step="3">
+ <span class="qb-step-label">Cenário 3 de 5 · Brincadeira</span>
+ <h3 class="qb-question">Quando põe um conjunto de carrinhos no chão, o que faz?</h3>
+ <div class="qb-options">
+ <button class="qb-option" data-profile="conector">Inventa histórias, faz vroom vroom</button>
+ <button class="qb-option" data-profile="explorador">Alinha-os por ordem, cor ou tamanho</button>
+ <button class="qb-option" data-profile="explorador">Pega num só e gira a roda durante muito tempo</button>
+ <button class="qb-option" data-profile="observador">Não chega aos carrinhos, prefere outra coisa</button>
+ </div>
+ <div class="qb-reveal" id="qb-reveal-3">
+ <div class="qb-reveal-badge">💡 Sabia que…</div>
+ <p class="qb-reveal-text">Alinhar objetos, girar rodas, repetir movimentos: são formas legítimas de exploração sensorial. Para algumas crianças, isto não é estranho. É como o mundo faz sentido. O trabalho não é eliminar estas brincadeiras, é alargar o repertório.</p>
+ <button class="qb-continue" onclick="nextQbStep()">Próximo cenário →</button>
+ </div>
+ </div>
+
+ <!-- Scenario 4 -->
+ <div class="qb-step" data-step="4">
+ <span class="qb-step-label">Cenário 4 de 5 · Frustração</span>
+ <h3 class="qb-question">Não consegue encaixar uma peça do puzzle. O que faz tipicamente?</h3>
+ <div class="qb-options">
+ <button class="qb-option" data-profile="conector">Pede ajuda ou tenta de novo</button>
+ <button class="qb-option" data-profile="observador">Larga e muda de atividade</button>
+ <button class="qb-option" data-profile="decifrador">Atira a peça, chora, sai a correr</button>
+ <button class="qb-option" data-profile="decifrador">Bate em si próprio ou na superfície</button>
+ </div>
+ <div class="qb-reveal" id="qb-reveal-4">
+ <div class="qb-reveal-badge">💡 Sabia que…</div>
+ <p class="qb-reveal-text">Uma criança que se bate quando está frustrada não está a fazer pirraça. Está a pedir ajuda para se regular. Castigar não funciona. Ensinar uma alternativa funciona, e é exatamente o que fazemos no plano de intervenção.</p>
+ <button class="qb-continue" onclick="nextQbStep()">Próximo cenário →</button>
+ </div>
+ </div>
+
+ <!-- Scenario 5 -->
+ <div class="qb-step" data-step="5">
+ <span class="qb-step-label">Cenário 5 de 5 · Conexão</span>
+ <h3 class="qb-question">O seu filho chega da escola ou da creche. Como o cumprimenta?</h3>
+ <div class="qb-options">
+ <button class="qb-option" data-profile="conector">Corre para mim a sorrir, conta o dia</button>
+ <button class="qb-option" data-profile="conector">Vem ao colo se eu chamar</button>
+ <button class="qb-option" data-profile="observador">Olha brevemente e segue para o que queria fazer</button>
+ <button class="qb-option" data-profile="observador">Não parece notar que eu estou ali</button>
+ </div>
+ <div class="qb-reveal" id="qb-reveal-5">
+ <div class="qb-reveal-badge">💡 Sabia que…</div>
+ <p class="qb-reveal-text">O contacto social não tem uma forma certa. Algumas crianças expressam ligação com palavras e abraços. Outras com presença silenciosa, ou partilhando um interesse. Compreender o estilo do seu filho é o primeiro passo para o ajudar a expandi-lo.</p>
+ <button class="qb-continue" onclick="finishQb()">Ver o perfil do meu filho →</button>
+ </div>
+ </div>
+
+ <div class="qb-counter" id="qbCounter">1 / 5</div>
+ </div>
+
+ <!-- Email Gate -->
+ <div class="qb-email-gate" id="qbEmailGate">
+ <div class="email-gate-icon">💜</div>
+ <span class="qb-step-label">O seu resultado está quase pronto</span>
+ <h3 class="qb-question">Para onde enviamos o perfil personalizado do seu filho?</h3>
+ <p class="email-gate-sub">Receba também o nosso <strong>Guia de Comunicação Infantil (PDF)</strong>, com estratégias práticas adaptadas ao perfil do seu filho. Sem custo.</p>
+
+ <form id="qbEmailForm" class="email-gate-form" onsubmit="return submitQbEmailGate(event)">
+ <div class="form-row"><input type="text" id="qbName" placeholder="O seu nome" required /></div>
+ <div class="form-row"><input type="email" id="qbEmail" placeholder="o-seu-email@exemplo.com" required /></div>
+ <div class="form-row"><input type="tel" id="qbPhone" placeholder="Telefone (opcional)" /></div>
+ <button type="submit" class="form-submit">Ver o Perfil do Meu Filho →</button>
+ <p class="email-gate-privacy">Sem spam. Sem partilhar com terceiros. Pode pedir para apagar a qualquer momento.</p>
+ </form>
+ </div>
+
+ <!-- Result -->
+ <div class="qb-result" id="qbResult">
+ <div class="qb-result-badge" id="qbResultBadge">Perfil</div>
+ <h3 class="qb-result-title" id="qbResultTitle"></h3>
+ <p class="qb-result-tagline" id="qbResultTagline"></p>
+
+ <div class="qb-result-section">
+ <h4>O que isto significa</h4>
+ <p id="qbResultMeaning"></p>
+ </div>
+
+ <div class="qb-result-section">
+ <h4>O que o seu filho precisa para prosperar</h4>
+ <p id="qbResultNeeds"></p>
+ </div>
+
+ <div class="qb-result-section qb-result-callout">
+ <h4>Quando vale a pena conversar connosco</h4>
+ <p id="qbResultWhen"></p>
+ </div>
+
+ <div class="qb-result-ctas">
+ <button onclick="shareQbResult()" class="btn-secondary qb-share-btn">📲 Partilhar este quiz</button>
+ <a href="tel:+351211372027" class="btn-primary">📞 Marcar Conversa Gratuita</a>
+ </div>
+
+ <p class="qb-result-disclaimer">Este quiz é um ponto de partida para reflexão, não um diagnóstico. Cada criança é única e merece avaliação individual.</p>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ============ PROBLEM AGITATION ============ -->
+<section class="problem">
+ <div class="container">
+ <span class="section-eyebrow">É comum sentir-se assim</span>
+ <h2 class="section-title">Reconhece-se em <em>alguma destas situações?</em></h2>
+ <p class="section-lead">Muitos pais que chegam até nós trazem as mesmas preocupações. Saiba que o que sente é válido, e que há um caminho.</p>
+
+ <div class="problem-grid">
+ <div class="problem-card">
+ <span class="problem-emoji">🙄</span>
+ <h3>"Toda a gente me diz 'tem calma'."</h3>
+ <p>Já contei à minha mãe, à educadora, ao pediatra. Sorrisos tranquilizadores. Mas eu sei que algo não bate certo. E ninguém me ouve.</p>
+ </div>
+ <div class="problem-card">
+ <span class="problem-emoji">💬</span>
+ <h3>"Aos 2 anos ainda não diz 'mãe'."</h3>
+ <p>Comparo com primos da mesma idade que já falam frases. O meu passa por mim sem reagir quando o chamo. O médico de família diz para esperar mais.</p>
+ </div>
+ <div class="problem-card">
+ <span class="problem-emoji">🛒</span>
+ <h3>"Já não vamos ao supermercado."</h3>
+ <p>As crises duram 40 minutos. Tenho medo de planear fins-de-semana. Os outros pais olham. Eu já nem tenho energia para explicar.</p>
+ </div>
+ <div class="problem-card">
+ <span class="problem-emoji">🌀</span>
+ <h3>"Não quero pensar na palavra que me anda na cabeça."</h3>
+ <p>Faço scroll às 3 da manhã. Leio fóruns. De manhã tenho medo que a resposta confirme tudo. E mais medo ainda de continuar sem saber.</p>
+ </div>
+ <div class="problem-card">
+ <span class="problem-emoji">⏳</span>
+ <h3>"Avaliação no público? Setembro do próximo ano."</h3>
+ <p>11 meses de espera. Sei que cada mês conta. Procuro privado, mas há tantas clínicas, tantos sites, e eu já não sei em quem confiar.</p>
+ </div>
+ <div class="problem-card">
+ <span class="problem-emoji">📄</span>
+ <h3>"Saí da consulta com um papel."</h3>
+ <p>Diagnóstico confirmado. Sem plano. Sem ninguém a explicar o que fazer no dia seguinte. Procuro no Google e abrem-se mil separadores. Estou sozinho/a.</p>
+ </div>
+ </div>
+
+ <div class="problem-cta">
+ <p>"O primeiro passo é também o mais difícil, pedir ajuda. Estamos aqui para esse passo."</p>
+ <a href="#quiz" class="btn-primary">Fazer o Quiz de Avaliação <span class="arrow">→</span></a>
+ </div>
+ </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="quiz-section" id="quiz">
+ <div class="container">
+ <div class="quiz-intro">
+ <span class="section-eyebrow">Quiz Gratuito · 2 Minutos · Resultado Personalizado</span>
+ <h2 class="section-title">O meu filho precisa de <em>apoio especializado?</em></h2>
+ <p class="section-lead" style="margin-left: auto; margin-right: auto;">7 perguntas baseadas em marcos de desenvolvimento e indicadores clínicos. No final, recebe uma orientação personalizada, sem juízos, sem alarmismo, só clareza.</p>
+ </div>
+
+ <div class="quiz-widget">
+ <div class="quiz-progress"><div class="quiz-progress-bar" id="progressBar"></div></div>
+
+ <div class="quiz-body" id="quizBody">
+
+ <!-- Question 1 -->
+ <div class="quiz-step active" data-step="1">
+ <div class="quiz-step-label">Pergunta 1 de 7</div>
+ <h3 class="quiz-question">Qual é a idade do seu filho/a?</h3>
+ <div class="quiz-options">
+ <button class="quiz-option" data-points="0" data-age="baby">
+ <span class="dot"></span> 0 a 12 meses
+ </button>
+ <button class="quiz-option" data-points="0" data-age="toddler">
+ <span class="dot"></span> 1 a 2 anos
+ </button>
+ <button class="quiz-option" data-points="0" data-age="early">
+ <span class="dot"></span> 2 a 3 anos
+ </button>
+ <button class="quiz-option" data-points="0" data-age="preschool">
+ <span class="dot"></span> 3 a 5 anos
+ </button>
+ <button class="quiz-option" data-points="0" data-age="school">
+ <span class="dot"></span> 5 a 8 anos
+ </button>
+ <button class="quiz-option" data-points="0" data-age="older">
+ <span class="dot"></span> 8 anos ou mais
+ </button>
+ </div>
+ </div>
+
+ <!-- Question 2 -->
+ <div class="quiz-step" data-step="2">
+ <div class="quiz-step-label">Pergunta 2 de 7</div>
+ <h3 class="quiz-question">Como descreveria a comunicação dele/a?</h3>
+ <div class="quiz-options">
+ <button class="quiz-option" data-points="0"><span class="dot"></span> Comunica bem para a idade, fala e/ou usa gestos com facilidade</button>
+ <button class="quiz-option" data-points="1"><span class="dot"></span> Fala um pouco menos do que as outras crianças da idade</button>
+ <button class="quiz-option" data-points="2"><span class="dot"></span> Comunica sobretudo a apontar ou puxar pela mão</button>
+ <button class="quiz-option" data-points="3"><span class="dot"></span> Repete palavras ou frases (ecolalia) sem comunicar diretamente</button>
+ <button class="quiz-option" data-points="3"><span class="dot"></span> Não diz palavras / praticamente não verbaliza</button>
+ </div>
+ </div>
+
+ <!-- Question 3 -->
+ <div class="quiz-step" data-step="3">
+ <div class="quiz-step-label">Pergunta 3 de 7</div>
+ <h3 class="quiz-question">Quando o chama pelo nome, como reage?</h3>
+ <div class="quiz-options">
+ <button class="quiz-option" data-points="0"><span class="dot"></span> Responde quase sempre, vira-se ou olha-me</button>
+ <button class="quiz-option" data-points="1"><span class="dot"></span> Responde às vezes, depende do que está a fazer</button>
+ <button class="quiz-option" data-points="2"><span class="dot"></span> Raramente responde, tenho de insistir muito</button>
+ <button class="quiz-option" data-points="3"><span class="dot"></span> Quase nunca responde, parece não ouvir</button>
+ </div>
+ </div>
+
+ <!-- Question 4 -->
+ <div class="quiz-step" data-step="4">
+ <div class="quiz-step-label">Pergunta 4 de 7</div>
+ <h3 class="quiz-question">Como é o contacto visual dele/a consigo?</h3>
+ <div class="quiz-options">
+ <button class="quiz-option" data-points="0"><span class="dot"></span> Olha-me nos olhos com facilidade, sustenta o olhar</button>
+ <button class="quiz-option" data-points="1"><span class="dot"></span> Faz contacto visual breve, sobretudo se eu insistir</button>
+ <button class="quiz-option" data-points="2"><span class="dot"></span> Evita olhar nos olhos, prefere objetos</button>
+ <button class="quiz-option" data-points="2"><span class="dot"></span> Não tenho a certeza, parece-me inconsistente</button>
+ </div>
+ </div>
+
+ <!-- Question 5 -->
+ <div class="quiz-step" data-step="5">
+ <div class="quiz-step-label">Pergunta 5 de 7</div>
+ <h3 class="quiz-question">Quando há mudanças na rotina, ele/a...</h3>
+ <div class="quiz-options">
+ <button class="quiz-option" data-points="0"><span class="dot"></span> Adapta-se com facilidade, fica curioso/a</button>
+ <button class="quiz-option" data-points="1"><span class="dot"></span> Resiste um pouco, mas acaba por se adaptar</button>
+ <button class="quiz-option" data-points="2"><span class="dot"></span> Fica muito ansioso/a ou desorganizado/a</button>
+ <button class="quiz-option" data-points="3"><span class="dot"></span> Tem crises intensas e prolongadas (mais de 20 min)</button>
+ </div>
+ </div>
+
+ <!-- Question 6 -->
+ <div class="quiz-step" data-step="6">
+ <div class="quiz-step-label">Pergunta 6 de 7</div>
+ <h3 class="quiz-question">Como brinca habitualmente?</h3>
+ <div class="quiz-options">
+ <button class="quiz-option" data-points="0"><span class="dot"></span> Brinca de forma imaginativa e interage com outros</button>
+ <button class="quiz-option" data-points="1"><span class="dot"></span> Prefere brincar sozinho/a, mesmo quando há outras crianças</button>
+ <button class="quiz-option" data-points="2"><span class="dot"></span> Alinha objetos, repete o mesmo movimento, foca-se em partes</button>
+ <button class="quiz-option" data-points="2"><span class="dot"></span> Brincadeira limitada, usa poucos brinquedos ou da mesma forma</button>
+ </div>
+ </div>
+
+ <!-- Question 7 -->
+ <div class="quiz-step" data-step="7">
+ <div class="quiz-step-label">Pergunta 7 de 7</div>
+ <h3 class="quiz-question">Qual é a sua maior preocupação neste momento?</h3>
+ <div class="quiz-options">
+ <button class="quiz-option" data-points="1" data-concern="behavior"><span class="dot"></span> Comportamento, birras, agressividade, recusa</button>
+ <button class="quiz-option" data-points="2" data-concern="language"><span class="dot"></span> Linguagem, atraso na fala ou comunicação</button>
+ <button class="quiz-option" data-points="2" data-concern="social"><span class="dot"></span> Interação social, não brinca com outros, isolamento</button>
+ <button class="quiz-option" data-points="3" data-concern="autism"><span class="dot"></span> Suspeita de autismo ou atraso global do desenvolvimento</button>
+ <button class="quiz-option" data-points="1" data-concern="emotional"><span class="dot"></span> Apoio emocional, ansiedade, medos, regulação</button>
+ <button class="quiz-option" data-points="1" data-concern="explore"><span class="dot"></span> Não tenho certeza, quero conversar para perceber melhor</button>
+ </div>
+ </div>
+
+ <div class="quiz-nav">
+ <button class="quiz-back" id="backBtn" style="visibility: hidden;">← Voltar</button>
+ <span class="quiz-counter" id="counter">1 / 7</span>
+ </div>
+ </div>
+
+ <!-- Email Capture Gate -->
+ <div class="quiz-email-gate" id="quizEmailGate">
+ <div class="email-gate-icon">📋</div>
+ <span class="quiz-step-label">Quase pronto</span>
+ <h3 class="quiz-question">Para onde enviamos o seu resultado personalizado?</h3>
+ <p class="email-gate-sub">Receba também o nosso <strong>Guia de Marcos do Desenvolvimento (0 a 6 anos)</strong>, em PDF, sem custo. E se precisar, ligue-nos diretamente: temos algumas vagas este mês na Lisboa e Vale do Tejo.</p>
+
+ <form id="emailGateForm" class="email-gate-form" onsubmit="return submitEmailGate(event)">
+ <div class="form-row">
+ <input type="text" id="quizName" placeholder="O seu nome" required />
+ </div>
+ <div class="form-row">
+ <input type="email" id="quizEmail" placeholder="o-seu-email@exemplo.com" required />
+ </div>
+ <div class="form-row">
+ <input type="tel" id="quizPhone" placeholder="Telefone (opcional, ligamos se preferir)" />
+ </div>
+ <button type="submit" class="form-submit">Ver o Meu Resultado →</button>
+ <p class="email-gate-privacy">Sem spam. Sem partilhar com terceiros. Pode pedir para apagar a qualquer momento.</p>
+ </form>
+
+ <div class="email-gate-urgency">
+ <strong>⏰ Vagas limitadas:</strong> as listas de espera no SNS estão entre 8 e 14 meses. Quanto mais cedo agir, melhor a janela de intervenção.
+ </div>
+ </div>
+
+ <!-- Result -->
+ <div class="quiz-result" id="quizResult">
+ <span class="result-badge" id="resultBadge">Avaliação</span>
+ <h3 class="result-title" id="resultTitle">O seu resultado</h3>
+ <div class="result-body" id="resultBody"></div>
+ <div class="result-recommendations" id="resultRecs"></div>
+ <div class="result-urgency" id="resultUrgency"></div>
+ <div class="result-ctas" id="resultCtas"></div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ============ ABA SERVICES ============ -->
+<section class="aba-section" id="aba">
+ <div class="container">
+ <div class="aba-hero">
+ <div>
+ <span class="section-eyebrow">Serviço Principal</span>
+ <h2 class="section-title">Intervenção <em>ABA</em><br>centrada na criança.</h2>
+ <p class="section-lead">A Análise Aplicada do Comportamento (ABA) é a abordagem com mais evidência científica para intervenção precoce em autismo e perturbações do desenvolvimento. Mas a forma como é feita importa, e muito.</p>
+ <p style="color: var(--ink); font-size: 1rem; margin-bottom: 1.5rem;">Na Ser Único fazemos ABA <strong>de uma forma humana, com respeito pela autonomia, regulação e dignidade da criança</strong>. Sem conformidade forçada. Com a família como parceira ativa, todos os dias.</p>
+
+ <div class="aba-features">
+ <div class="aba-feature">
+ <div class="aba-feature-icon">1</div>
+ <div>
+ <h4>Avaliação Inicial Completa</h4>
+ <p>Para os mais pequenos usamos o M-CHAT-R e o MOTAS. Para crianças mais velhas, a Vineland-3. A entrevista familiar e a observação direta complementam tudo. O plano nasce daqui, nunca de um protocolo genérico.</p>
+ </div>
+ </div>
+ <div class="aba-feature">
+ <div class="aba-feature-icon">2</div>
+ <div>
+ <h4>Plano Individualizado</h4>
+ <p>Objetivos claros, mensuráveis, partilhados consigo. Revisto regularmente. Adaptado ao seu filho, não ao manual.</p>
+ </div>
+ </div>
+ <div class="aba-feature">
+ <div class="aba-feature-icon">3</div>
+ <div>
+ <h4>Equipa IBA + Terapeutas Formados</h4>
+ <p>Supervisão clínica permanente por analistas certificadas (International Behavior Analyst). Terapeutas com formação em NET (Natural Environment Teaching), AAC (Comunicação Aumentativa e Alternativa) entre outras abordagens contemporâneas.</p>
+ </div>
+ </div>
+ <div class="aba-feature">
+ <div class="aba-feature-icon">4</div>
+ <div>
+ <h4>Capacitação Parental Obrigatória</h4>
+ <p>Não é opcional. Faz parte de toda a intervenção. Não basta trabalhar com a criança nas sessões, capacitamos a família para que o progresso aconteça também em casa, todos os dias.</p>
+ </div>
+ </div>
+ <div class="aba-feature">
+ <div class="aba-feature-icon">5</div>
+ <div>
+ <h4>Em Clínica, Escola ou Domicílio</h4>
+ <p>Os serviços diretos podem ser feitos na nossa clínica na área de Lisboa e Vale do Tejo, na escola do seu filho, ou em casa. Dependendo das necessidades, definimos juntos o melhor contexto.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- Pricing -->
+ <div class="pricing-card">
+ <span class="pricing-card-label">Valores 2026</span>
+ <h3>Investimento transparente.<br>Quanto mais horas, melhor o valor.</h3>
+
+ <div class="pricing-floor">
+ <div class="floor-label">A partir de</div>
+ <div class="floor-amount">29€<span class="per">/hora</span></div>
+ <div class="floor-desc">Valor reduzido por escalão de horas semanais</div>
+ </div>
+
+ <div class="pricing-included">
+ <h4>O que está incluído</h4>
+ <ul>
+ <li>Avaliação inicial (M-CHAT-R, MOTAS ou Vineland-3)</li>
+ <li>Plano individualizado com objetivos mensuráveis</li>
+ <li>Sessões com supervisão IBA permanente</li>
+ <li>Capacitação parental obrigatória (não é extra)</li>
+ <li>Fatura-recibo para reembolso via seguro / ADSE</li>
+ </ul>
+ </div>
+
+ <p class="pricing-note">Investir mais agora significa, muitas vezes, investir menos no futuro. Cada mês de intervenção na janela certa traduz-se em meses ou anos que não precisarão de ser recuperados depois. Menos custo a longo prazo. E menos noites em claro.</p>
+
+ <div style="margin-top: 1.75rem; position: relative; z-index: 1;">
+ <button onclick="openPricingGate()" class="btn-primary" style="background: var(--lavender); color: var(--aubergine); width: 100%; justify-content: center;">Quero a Tabela Completa de Valores <span class="arrow">→</span></button>
+ <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 0.75rem; text-align: center; position: relative; z-index: 1;">Enviamos a tabela completa e uma estimativa para o seu caso, em 24h.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ============ WHY NOW ============ -->
+<section class="why-now-section">
+ <div class="container">
+ <div class="why-now-grid">
+ <div>
+ <span class="section-eyebrow">A janela certa</span>
+ <h2 class="section-title">Cada mês <em>conta.</em><br>Investir agora é investir menos depois.</h2>
+ <p class="section-lead">A intervenção precoce é uma janela, não se repete. Cada mês de progresso na idade certa significa meses ou anos que não precisarão de ser recuperados depois. Menos custo a longo prazo. Menos noites em claro. Mais autonomia para a criança crescer.</p>
+ </div>
+ <div class="why-now-stats">
+ <div class="stat-card">
+ <div class="stat-num">8 a 14</div>
+ <div class="stat-label">Meses de espera no SNS para avaliação</div>
+ </div>
+ <div class="stat-card">
+ <div class="stat-num">10 a 15h</div>
+ <div class="stat-label">Média de intervenção semanal das nossas famílias</div>
+ </div>
+ <div class="stat-card">
+ <div class="stat-num">24h</div>
+ <div class="stat-label">É o tempo médio em que respondemos ao seu pedido</div>
+ </div>
+ </div>
+ </div>
+ <div style="text-align: center; margin-top: 3rem;">
+ <button onclick="openPricingGate()" class="btn-primary">Pedir Tabela de Valores + Proposta <span class="arrow">→</span></button>
+ </div>
+ </div>
+</section>
+
+<!-- ============ PSYCHOLOGY SERVICES ============ -->
+<section class="psych-section" id="psicologia">
+ <div class="container">
+ <span class="section-eyebrow">Outros Serviços</span>
+ <h2 class="section-title">Apoio que acompanha <em>toda a família.</em></h2>
+ <p class="section-lead">Para além da ABA, oferecemos um leque de serviços de psicologia para crianças, adolescentes, adultos e famílias, porque o desenvolvimento acontece num ecossistema.</p>
+
+ <div class="services-grid">
+ <div class="service-card">
+ <div class="service-icon">🧠</div>
+ <div class="service-meta">Psicologia Infantil</div>
+ <h3>Crianças & Adolescentes</h3>
+ <p>Apoio psicológico para crianças e jovens em fases de transição, ansiedade, dificuldades emocionais ou comportamentais. Espaço seguro de expressão e crescimento.</p>
+ </div>
+
+ <div class="service-card">
+ <div class="service-icon">📋</div>
+ <div class="service-meta">Avaliações Psicológicas</div>
+ <h3>Avaliação de Desenvolvimento</h3>
+ <p>Avaliações psicológicas completas: cognitiva, comportamental, do desenvolvimento. Para diagnóstico, escola, ou simplesmente para perceber o seu filho.</p>
+ </div>
+
+ <div class="service-card">
+ <div class="service-icon">🤰</div>
+ <div class="service-meta">Psicologia Perinatal</div>
+ <h3>Gravidez & Pós-Parto</h3>
+ <p>Acompanhamento psicológico antes, durante e depois do parto. Preparação para a parentalidade, ansiedade pré-natal, depressão pós-parto, vinculação.</p>
+ </div>
+
+ <div class="service-card">
+ <div class="service-icon">👨‍👩‍👧</div>
+ <div class="service-meta">Coaching Parental</div>
+ <h3>Apoio à Parentalidade</h3>
+ <p>Estratégias práticas para os desafios do dia-a-dia: birras, sono, alimentação, limites, fratrias. Para pais que querem mais ferramentas e menos culpa.</p>
+ </div>
+
+ <div class="service-card">
+ <div class="service-icon">💗</div>
+ <div class="service-meta">Psicologia Adulto</div>
+ <h3>Adultos</h3>
+ <p>Acompanhamento psicológico para adultos: ansiedade, depressão, autoconhecimento, transições de vida. Em português e inglês.</p>
+ </div>
+
+ <div class="service-card">
+ <div class="service-icon">🌱</div>
+ <div class="service-meta">Bebés & Primeira Infância</div>
+ <h3>Babywearing & Massagem Bebé</h3>
+ <p>Workshops e acompanhamento para a primeira infância: massagem infantil, porte ergonómico (babywearing), playgroups de vinculação.</p>
+ </div>
+ </div>
+
+ <div style="text-align: center; margin-top: 3rem;">
+ <a href="#contacto" class="btn-secondary">Falar Connosco Sobre Estes Serviços <span class="arrow">→</span></a>
+ </div>
+ </div>
+</section>
+
+<!-- ============ APPROACH (Aldeia) ============ -->
+<section class="approach-section" id="aldeia">
+ <div class="container">
+ <span class="section-eyebrow">A Nossa Aldeia</span>
+ <h2 class="section-title">É preciso uma <em>aldeia</em><br>para crescer.</h2>
+ <p class="section-lead">Não acreditamos em fórmulas prontas. Acreditamos que cada criança, cada mãe, cada pai, traz uma história única. A nossa missão é juntar excelência técnica com a empatia de quem sabe que educar exige uma rede.</p>
+
+ <div class="approach-pillars">
+ <div class="pillar">
+ <div class="pillar-num">01</div>
+ <h4>Baseado em Evidência</h4>
+ <p>Trabalhamos com as abordagens mais validadas cientificamente, ABA contemporânea, TCC, intervenção naturalística. Sem modas, sem promessas vazias.</p>
+ </div>
+ <div class="pillar">
+ <div class="pillar-num">02</div>
+ <h4>Centrado na Criança</h4>
+ <p>O plano nasce da criança que temos à frente. Não de um manual. Respeitamos ritmo, regulação e dignidade, sempre.</p>
+ </div>
+ <div class="pillar">
+ <div class="pillar-num">03</div>
+ <h4>Família como Parceira</h4>
+ <p>Os pais não são "auxiliares", são protagonistas. Capacitamos, partilhamos, ouvimos. Cada sessão tem continuidade em casa.</p>
+ </div>
+ <div class="pillar">
+ <div class="pillar-num">04</div>
+ <h4>Multidisciplinar</h4>
+ <p>Psicólogos, analistas do comportamento, terapeutas especializados. Uma equipa que comunica entre si, e consigo.</p>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials">
+ <div class="container">
+ <span class="section-eyebrow">Famílias que confiaram em nós</span>
+ <h2 class="section-title">Histórias <em>reais.</em></h2>
+ <p class="section-lead">Estas são algumas das famílias que escolheram dar o primeiro passo. Os nomes foram alterados para proteger a sua privacidade.</p>
+
+ <div class="testimonials-grid">
+ <div class="testimonial">
+ <div class="testimonial-mark">"</div>
+ <p class="testimonial-quote">Aos 2 anos e meio, o nosso filho não dizia uma única palavra. Andámos meses a ouvir "tem calma". Na primeira sessão na Ser Único, sentimos pela primeira vez que alguém nos ouvia. Hoje, 14 meses depois, ele conta-me como foi o dia.</p>
+ <div class="testimonial-author">
+ <div class="testimonial-avatar">M</div>
+ <div>
+ <div class="testimonial-name">Marta R.</div>
+ <div class="testimonial-meta">Mãe · Lisboa</div>
+ </div>
+ </div>
+ </div>
+
+ <div class="testimonial">
+ <div class="testimonial-mark">"</div>
+ <p class="testimonial-quote">Tinha medo do que era a ABA, tinha lido coisas más online. A equipa explicou-nos como fazem aqui, com respeito, com brincadeira, sem forçar. Foi a melhor decisão. A nossa filha brilha nas sessões.</p>
+ <div class="testimonial-author">
+ <div class="testimonial-avatar">J</div>
+ <div>
+ <div class="testimonial-name">João & Ana C.</div>
+ <div class="testimonial-meta">Pais · Belverde</div>
+ </div>
+ </div>
+ </div>
+
+ <div class="testimonial">
+ <div class="testimonial-mark">"</div>
+ <p class="testimonial-quote">O coaching parental mudou-me. Não foi só o meu filho que melhorou, fui eu que aprendi a ler o que ele me dizia. Saí da culpa, entrei na ação. Recomendo a todas as famílias que estão exaustas.</p>
+ <div class="testimonial-author">
+ <div class="testimonial-avatar">S</div>
+ <div>
+ <div class="testimonial-name">Sofia L.</div>
+ <div class="testimonial-meta">Mãe · Verdizela</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about-section">
+ <div class="container">
+ <div class="about-grid">
+ <div class="about-visual">
+ <img src="logo-dark.webp" alt="Ser Único, da gravidez aos primeiros anos de vida" class="about-visual-logo" />
+ <p class="about-visual-quote">"Cuidar de quem nasce,<br>de quem cresce,<br>e de quem cuida."</p>
+ </div>
+ <div>
+ <span class="section-eyebrow">Quem somos</span>
+ <h2 class="section-title">Uma equipa<br>que <em>vê para além</em><br>do comportamento.</h2>
+ <p style="color: var(--ink); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.25rem;">A Ser Único nasceu da convicção de que cada família merece apoio técnico de excelência <strong>e</strong> humanidade. Que avaliar uma criança não pode ser um momento frio. Que dar um diagnóstico não pode ser o fim, tem de ser o começo de um plano.</p>
+ <p style="color: var(--muted); font-size: 1rem; line-height: 1.7; margin-bottom: 1rem;">A nossa equipa multidisciplinar é composta por <strong>analistas do comportamento certificadas pela International Behavior Analyst (IBA)</strong>, psicólogas registadas na Ordem dos Psicólogos Portugueses, e terapeutas com formação contínua em NET, AAC e outras abordagens contemporâneas. A trabalhar na área de Lisboa e Vale do Tejo, com mais de uma década de experiência em intervenção precoce, autismo e psicologia infantil.</p>
+
+ <div class="credentials">
+ <span class="credential-chip">Equipa IBA</span>
+ <span class="credential-chip">Ordem dos Psicólogos PT</span>
+ <span class="credential-chip">M-CHAT-R / MOTAS / Vineland-3</span>
+ <span class="credential-chip">NET + AAC</span>
+ <span class="credential-chip">+10 anos experiência</span>
+ <span class="credential-chip">Área de Lisboa e Vale do Tejo</span>
+ <span class="credential-chip">EN / PT</span>
+ </div>
+
+ <a href="#contacto" class="btn-primary">Conheça a Equipa <span class="arrow">→</span></a>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq-section" id="faq">
+ <div class="container container-narrow">
+ <span class="section-eyebrow">Perguntas frequentes</span>
+ <h2 class="section-title">Tudo o que <em>quer saber.</em></h2>
+ <p class="section-lead">Reunimos as dúvidas mais comuns das famílias que nos contactam pela primeira vez. Se a sua não estiver aqui, <a href="#contacto" style="color: var(--terracotta); text-decoration: underline;">escreva-nos</a>.</p>
+
+ <div class="faq-list">
+ <details class="faq-item">
+ <summary class="faq-q">O que é a terapia ABA, exatamente?</summary>
+ <div class="faq-a">A Análise Aplicada do Comportamento (ABA, do inglês <em>Applied Behavior Analysis</em>) é uma abordagem científica que usa princípios da aprendizagem para ensinar competências e reduzir comportamentos que interferem com o desenvolvimento. É a abordagem com <strong>maior evidência científica</strong> para autismo e atrasos do desenvolvimento. A ABA contemporânea que praticamos é afirmativa, naturalística e respeitadora, muito diferente da ABA dos anos 80 que se vê criticada online.</div>
+ </details>
+
+ <details class="faq-item">
+ <summary class="faq-q">A partir de que idade se pode começar ABA?</summary>
+ <div class="faq-a">Sim, podemos avaliar crianças a partir dos <strong>18 meses</strong>. Aliás, a evidência mostra que <strong>quanto mais cedo</strong> a intervenção começa, melhores os resultados, a chamada "intervenção precoce". A janela ideal é entre os 2 e os 5 anos, mas trabalhamos com crianças e adolescentes até aos 18.</div>
+ </details>
+
+ <details class="faq-item">
+ <summary class="faq-q">Preciso de um diagnóstico de autismo para começar?</summary>
+ <div class="faq-a"><strong>Não.</strong> Trabalhamos com qualquer criança que beneficie de apoio no desenvolvimento, com ou sem diagnóstico. Aliás, muitas famílias chegam até nós exatamente porque <em>suspeitam</em> que algo não está bem e querem clareza. Se precisar de diagnóstico formal, podemos também fazer a avaliação psicológica.</div>
+ </details>
+
+ <details class="faq-item">
+ <summary class="faq-q">Quantas horas por semana são recomendadas?</summary>
+ <div class="faq-a">Depende sempre da idade e do perfil clínico de cada criança. Como referência geral, a evidência sugere que <strong>na intervenção precoce (até aos 5 anos) sejam consideradas 15 horas ou mais por semana</strong>. Para crianças mais velhas ou com menos apoio necessário, 5 a 10h/semana podem ser adequadas. Na nossa prática, a maioria das famílias situa-se entre as 10 e 15 horas. <strong>O número exato é sempre definido com base na avaliação inicial.</strong> A informação aqui é meramente indicativa, fundamentada em evidência geral e na nossa experiência clínica.</div>
+ </details>
+
+ <details class="faq-item">
+ <summary class="faq-q">Os valores são reembolsados pelo seguro de saúde?</summary>
+ <div class="faq-a"><strong>Não temos acordos diretos com seguradoras.</strong> Emitimos fatura-recibo que pode submeter posteriormente ao seu seguro ou à ADSE. A maioria das famílias que acompanhamos recebe reembolso parcial dessa forma. Recomendamos que confirme junto do seu plano específico antes de iniciar para saber a percentagem coberta.</div>
+ </details>
+
+ <details class="faq-item">
+ <summary class="faq-q">As sessões são online ou presenciais?</summary>
+ <div class="faq-a">A intervenção direta com crianças é <strong>sempre presencial</strong>: na nossa clínica, na escola, ou em casa, dependendo das necessidades. A capacitação parental pode ser online, e essa é precisamente uma forma de chegarmos a famílias em regiões mais isoladas: <strong>quando não existe intervenção próxima, formamos os pais como facilitadores da intervenção no dia-a-dia</strong>, com supervisão regular nossa à distância.</div>
+ </details>
+
+ <details class="faq-item">
+ <summary class="faq-q">Atendem em inglês?</summary>
+ <div class="faq-a">Sim, toda a nossa equipa clínica é bilingue <strong>Português / Inglês</strong>. Trabalhamos com famílias expat em Portugal, e também acompanhamos famílias em outros países.</div>
+ </details>
+
+ <details class="faq-item">
+ <summary class="faq-q">Como é a primeira consulta?</summary>
+ <div class="faq-a">A primeira consulta é <strong>uma conversa</strong>, connosco e/ou consigo e o seu filho. Ouvimos a vossa história, observamos a criança, fazemos algumas avaliações breves. No final, propomos um plano: se faz sentido começar uma intervenção, se beneficia de avaliação formal, ou se a criança está dentro do esperado para a idade. Sem pressão para nada.</div>
+ </details>
+ </div>
+ </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact-section" id="contacto">
+ <div class="container">
+ <div style="text-align: center; margin-bottom: 3rem;">
+ <span class="section-eyebrow">Próximos passos</span>
+ <h2 class="section-title">Vamos <em>conversar.</em></h2>
+ <p class="section-lead" style="margin-left: auto; margin-right: auto;">Conte-nos brevemente o que se passa. Respondemos em menos de 24h em dias úteis, com uma proposta de primeira consulta, gratuita.</p>
+ </div>
+
+ <div class="contact-grid">
+ <div class="contact-info-card">
+ <h3>Estamos aqui.</h3>
+ <p>Escolha a forma de contacto que prefere. Toda a primeira conversa é confidencial e sem compromisso.</p>
+
+ <div class="contact-method">
+ <div class="contact-method-icon">📞</div>
+ <div>
+ <strong>Telefone</strong>
+ <a href="tel:+351211372027">+351 21 137 2027</a>
+ </div>
+ </div>
+
+ <div class="contact-method">
+ <div class="contact-method-icon">💬</div>
+ <div>
+ <strong>WhatsApp</strong>
+ <a href="https://wa.me/351913073668" target="_blank">Mensagem direta · resposta em horas</a>
+ </div>
+ </div>
+
+ <div class="contact-method">
+ <div class="contact-method-icon">✉️</div>
+ <div>
+ <strong>Email</strong>
+ <a href="mailto:geral@ser-unico.com">geral@ser-unico.com</a>
+ </div>
+ </div>
+
+ <div class="contact-method">
+ <div class="contact-method-icon">📍</div>
+ <div>
+ <strong>Localização</strong>
+ <a href="#">Área de Lisboa e Vale do Tejo · presencial e online</a>
+ </div>
+ </div>
+
+ <div class="contact-method">
+ <div class="contact-method-icon">📷</div>
+ <div>
+ <strong>Instagram</strong>
+ <a href="https://www.instagram.com/ser.unico" target="_blank">@ser.unico</a>
+ </div>
+ </div>
+ </div>
+
+ <form class="form" id="contactForm" onsubmit="return submitForm(event)">
+ <div class="form-row">
+ <label for="name">O seu nome</label>
+ <input type="text" id="name" name="name" required placeholder="Como prefere que lhe chamemos?" />
+ </div>
+ <div class="form-row">
+ <label for="email">Email</label>
+ <input type="email" id="email" name="email" required placeholder="o-seu-email@exemplo.com" />
+ </div>
+ <div class="form-row">
+ <label for="phone">Telefone (opcional)</label>
+ <input type="tel" id="phone" name="phone" placeholder="+351 ..." />
+ </div>
+ <div class="form-row">
+ <label for="interest">Procuro apoio em</label>
+ <select id="interest" name="interest" required>
+ <option value="">Escolha uma opção</option>
+ <option value="aba">Intervenção ABA</option>
+ <option value="avaliacao">Avaliação Psicológica / Desenvolvimento</option>
+ <option value="psicologia-infantil">Psicologia Infantil / Juvenil</option>
+ <option value="coaching">Coaching Parental</option>
+ <option value="perinatal">Psicologia Perinatal</option>
+ <option value="adulto">Psicologia Adulto</option>
+ <option value="outro">Outro / não sei</option>
+ </select>
+ </div>
+ <div class="form-row">
+ <label for="message">Conte-nos brevemente</label>
+ <textarea id="message" name="message" required placeholder="A idade do/a seu/sua filho/a, o que o/a preocupa, ou qualquer dúvida..."></textarea>
+ </div>
+ <button type="submit" class="form-submit">Enviar Mensagem →</button>
+ <p class="form-note">Respondemos em menos de 24h em dias úteis. A sua informação é confidencial.</p>
+ <div class="form-success" id="formSuccess">✓ Mensagem enviada! Entraremos em contacto em breve.</div>
+ </form>
+ </div>
+ </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <a href="#" class="logo">
+ <img src="logo-light.webp" alt="" class="logo-mark" />
+ Ser Único
+ </a>
+ <p>Clínica multidisciplinar de desenvolvimento infantil. Cuidamos de quem nasce, de quem cresce, e de quem cuida.</p>
+ </div>
+ <div class="footer-col">
+ <h5>Serviços</h5>
+ <ul>
+ <li><a href="#aba">Intervenção ABA</a></li>
+ <li><a href="#psicologia">Psicologia Infantil</a></li>
+ <li><a href="#psicologia">Avaliações</a></li>
+ <li><a href="#psicologia">Coaching Parental</a></li>
+ <li><a href="#psicologia">Psicologia Perinatal</a></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h5>Recursos</h5>
+ <ul>
+ <li><a href="#quiz-comportamento">Quiz Comunicação</a></li>
+ <li><a href="#quiz">Quiz Avaliação</a></li>
+ <li><a href="#faq">Perguntas Frequentes</a></li>
+ <li><a href="#aldeia">A Nossa Abordagem</a></li>
+ <li><a href="#contacto">Marcar Consulta</a></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h5>Contacto</h5>
+ <ul>
+ <li><a href="tel:+351211372027">+351 21 137 2027</a></li>
+ <li><a href="mailto:geral@ser-unico.com">geral@ser-unico.com</a></li>
+ <li><a href="https://wa.me/351913073668">WhatsApp</a></li>
+ <li><a href="https://www.instagram.com/ser.unico">Instagram</a></li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span>© 2026 Ser Único. Todos os direitos reservados.</span>
+ <span>Política de Privacidade · Termos · Cookies</span>
+ </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/351913073668?text=Olá!%20Gostaria%20de%20mais%20informações." target="_blank" class="whatsapp-float" aria-label="Contactar via WhatsApp">
+ <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- Pricing Gate Modal -->
+<div class="pricing-modal" id="pricingModal" onclick="if(event.target===this)closePricingGate()">
+ <div class="pricing-modal-card">
+ <button class="pricing-modal-close" onclick="closePricingGate()" aria-label="Fechar">×</button>
+
+ <div id="pricingModalContent">
+ <h3>Pedir tabela completa de valores</h3>
+ <p class="modal-sub">Deixe-nos os seus dados e enviamos em 24h, junto com uma estimativa indicativa para o caso do seu filho.</p>
+
+ <div class="modal-deliverable">
+ <strong>O que vai receber por email:</strong>
+ <ul>
+ <li>Tabela completa de escalões e valores</li>
+ <li>Estimativa indicativa para o seu caso</li>
+ <li>Guia: o que esperar de uma avaliação inicial</li>
+ <li>Resposta personalizada às suas dúvidas</li>
+ </ul>
+ </div>
+
+ <form id="pricingForm" onsubmit="return submitPricingGate(event)">
+ <div class="form-row">
+ <input type="text" id="pricingName" placeholder="O seu nome" required />
+ </div>
+ <div class="form-row">
+ <input type="email" id="pricingEmail" placeholder="o-seu-email@exemplo.com" required />
+ </div>
+ <div class="form-row">
+ <input type="tel" id="pricingPhone" placeholder="Telefone (opcional)" />
+ </div>
+ <div class="form-row">
+ <select id="pricingAge" required style="width: 100%; padding: 0.95rem 1.1rem; border: 1.5px solid var(--border); border-radius: 12px; font-family: inherit; font-size: 1rem; color: var(--ink); background: var(--cream);">
+ <option value="">Idade do/a seu/sua filho/a</option>
+ <option value="0-1">0 a 12 meses</option>
+ <option value="1-2">1 a 2 anos</option>
+ <option value="2-3">2 a 3 anos</option>
+ <option value="3-5">3 a 5 anos</option>
+ <option value="5-8">5 a 8 anos</option>
+ <option value="8+">8 anos ou mais</option>
+ </select>
+ </div>
+ <div class="form-row">
+ <textarea id="pricingConcern" placeholder="Conte-nos brevemente o que se passa (opcional)" style="width: 100%; padding: 0.95rem 1.1rem; border: 1.5px solid var(--border); border-radius: 12px; font-family: inherit; font-size: 1rem; color: var(--ink); background: var(--cream); resize: vertical; min-height: 90px;"></textarea>
+ </div>
+ <button type="submit" class="form-submit" style="width: 100%; background: var(--aubergine); color: var(--cream); padding: 1.1rem; border: none; border-radius: 100px; font-family: inherit; font-size: 1rem; font-weight: 500; cursor: pointer; margin-top: 0.5rem;">Receber Tabela + Proposta →</button>
+ <p style="font-size: 0.8rem; color: var(--muted); margin-top: 0.85rem; text-align: center;">Confidencial. Pode pedir para apagar a qualquer momento.</p>
+ </form>
+ </div>
+
+ <div class="pricing-modal-success" id="pricingModalSuccess">
+ <div class="check-circle">✓</div>
+ <h3 style="margin-bottom: 0.5rem;">Pedido recebido.</h3>
+ <p style="color: var(--muted); margin-bottom: 1.5rem;">Vamos enviar a tabela completa e a estimativa indicativa para o seu email em menos de 24 horas (dias úteis).</p>
+ <p style="font-size: 0.95rem; color: var(--ink); margin-bottom: 1.5rem;">Se preferir falar diretamente:</p>
+ <a href="tel:+351211372027" class="btn-primary" style="display: inline-flex;">📞 Ligar 21 137 2027</a>
+ </div>
+ </div>
+</div>
+
+<script>
+// ============ QUIZ B (BEHAVIOR / COMMUNICATION) ============
+let qbCurrentStep = 1;
+const qbTotalSteps = 5;
+const qbProfiles = []; // collected profile picks
+
+const qbBody = document.getElementById('qbBody');
+const qbProgressBar = document.getElementById('qbProgressBar');
+const qbCounter = document.getElementById('qbCounter');
+const qbEmailGate = document.getElementById('qbEmailGate');
+const qbResult = document.getElementById('qbResult');
+
+function updateQbProgress() {
+ const pct = (qbCurrentStep / qbTotalSteps) * 100;
+ qbProgressBar.style.width = pct + '%';
+ qbCounter.textContent = qbCurrentStep + ' / ' + qbTotalSteps;
+}
+
+// Attach click handlers to all qb-option buttons
+document.querySelectorAll('.qb-option').forEach(btn => {
+ btn.addEventListener('click', () => {
+ const step = btn.closest('.qb-step');
+ if (!step) return;
+ const stepNum = parseInt(step.dataset.step);
+ // Mark selected, disable siblings
+ step.querySelectorAll('.qb-option').forEach(o => {
+ o.classList.add('disabled');
+ o.classList.remove('selected');
+ });
+ btn.classList.add('selected');
+ btn.classList.remove('disabled');
+ // Store the profile pick
+ qbProfiles[stepNum - 1] = btn.dataset.profile;
+ // Show the reveal
+ const reveal = step.querySelector('.qb-reveal');
+ if (reveal) reveal.classList.add('show');
+ // Smooth scroll to reveal
+ setTimeout(() => {
+ reveal.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ }, 80);
+ });
+});
+
+function nextQbStep() {
+ // Hide current step
+ document.querySelectorAll('.qb-step').forEach(el => el.classList.remove('active'));
+ qbCurrentStep++;
+ const next = document.querySelector(`.qb-step[data-step="${qbCurrentStep}"]`);
+ if (next) {
+ next.classList.add('active');
+ updateQbProgress();
+ setTimeout(() => next.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+ }
+}
+
+function finishQb() {
+ // Hide quiz body, show email gate
+ qbBody.style.display = 'none';
+ qbEmailGate.classList.add('active');
+ qbProgressBar.style.width = '100%';
+ setTimeout(() => qbEmailGate.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+}
+
+function calculateQbProfile() {
+ // Count occurrences of each profile
+ const counts = { conector: 0, decifrador: 0, explorador: 0, observador: 0 };
+ qbProfiles.forEach(p => { if (counts[p] !== undefined) counts[p]++; });
+ // Tie-breaker priority: decifrador > explorador > observador > conector
+ const priority = ['decifrador', 'explorador', 'observador', 'conector'];
+ let winner = 'conector';
+ let maxCount = -1;
+ priority.forEach(p => {
+ if (counts[p] > maxCount) { maxCount = counts[p]; winner = p; }
+ });
+ return winner;
+}
+
+const qbProfileData = {
+ conector: {
+ title: 'O Conector',
+ tagline: 'O seu filho comunica com palavras, gestos e olhar.',
+ meaning: 'Crianças neste perfil usam a linguagem como ferramenta principal de comunicação. Procuram ativamente a interação, adaptam-se a mudanças com algum apoio, e expressam afeto de forma reconhecível. Não há sinais clínicos evidentes nas respostas, o que é uma excelente notícia.',
+ needs: 'Estas crianças prosperam quando os adultos validam as suas tentativas de comunicação, mesmo as imperfeitas, e quando há espaço para conversa real. O foco neste perfil é alargar vocabulário emocional, treinar regulação em momentos difíceis, e dar contexto para a complexidade do mundo.',
+ when: 'Vale a pena conversar connosco se notar regressões súbitas, se a comunicação flui bem com adultos mas não com pares, ou se há ansiedade, dificuldades escolares ou fratrias a gerir. A psicologia infantil pode fazer uma grande diferença.'
+ },
+ decifrador: {
+ title: 'O Decifrador',
+ tagline: 'O seu filho ainda não tem todas as palavras. Mas tem muito a dizer.',
+ meaning: 'Crianças neste perfil ainda estão a construir o seu sistema de comunicação. Usam o corpo, o comportamento, o tom: e você é o tradutor. As birras intensas, os puxões pela mão, os sons sem palavra, são tudo formas legítimas de tentar comunicar. O que parece desafio comportamental é, quase sempre, dificuldade de comunicação.',
+ needs: 'Crianças neste perfil precisam de adultos que vejam o comportamento como linguagem, não como mau comportamento. Estratégias como AAC (Comunicação Aumentativa e Alternativa), modelagem de pedidos com imagens, e construção sistemática de vocabulário podem acelerar muito o desenvolvimento. A intervenção precoce faz diferença real.',
+ when: 'Este perfil beneficia muito de avaliação especializada, idealmente antes dos 4 anos. Quanto mais cedo se compreende o sistema de comunicação do seu filho, mais opções existem para o expandir. Não há perda em saber, há tudo a ganhar.'
+ },
+ explorador: {
+ title: 'O Explorador Sensorial',
+ tagline: 'O seu filho explora o mundo pelo movimento, pela textura, pela repetição.',
+ meaning: 'Crianças neste perfil usam os sentidos como mapa. Os padrões e as repetições fazem-nas sentir seguras. A brincadeira pode parecer estranha aos olhos dos adultos, alinhar, girar, repetir, mas é como o cérebro está a organizar o mundo. Não há nada de errado com isto. É uma forma de estar.',
+ needs: 'Crianças neste perfil precisam de um ambiente que respeite as suas necessidades sensoriais e de adultos que alarguem (sem forçar) o seu mundo. Avaliação especializada pode mapear o perfil sensorial e definir estratégias de regulação que se traduzem em sessões e em casa.',
+ when: 'Se as repetições limitam a vida da família, se há rigidez extrema com mudanças, se a criança parece desligada para além do brincar, ou se há suspeita de autismo, vale a pena fazer avaliação. Cedo é melhor.'
+ },
+ observador: {
+ title: 'O Observador Atento',
+ tagline: 'O seu filho processa muito, antes de agir.',
+ meaning: 'Crianças neste perfil observam primeiro, agem depois. Aprendem em silêncio, engajam quando se sentem preparadas. Para muitas, isto é introversão saudável e força de carácter. Para outras, o silêncio é diferente, é distância. Distinguir entre as duas é o trabalho.',
+ needs: 'Crianças neste perfil precisam de tempo, paciência, e atenção especial à dimensão social. Estratégias que respeitem o ritmo natural, sem empurrar para a interação, costumam funcionar melhor. Se a observação for sinal de ansiedade ou de retraimento, há intervenções específicas que ajudam.',
+ when: 'Vale sempre uma avaliação, porque o limite entre temperamento e dificuldade nem sempre é óbvio. Não há perda em saber: se for temperamento, ficamos descansados. Se for outra coisa, agimos a tempo.'
+ }
+};
+
+function submitQbEmailGate(e) {
+ e.preventDefault();
+ const profile = calculateQbProfile();
+ const name = document.getElementById('qbName').value;
+ const email = document.getElementById('qbEmail').value;
+ const phone = document.getElementById('qbPhone').value;
+
+ const BREVO_ENDPOINT = 'https://sibforms.com/serve/YOUR_FORM_ID';
+ const formData = new FormData();
+ formData.append('EMAIL', email);
+ formData.append('FIRSTNAME', name);
+ formData.append('TELEFONE', phone);
+ formData.append('QUIZ_BUCKET', profile);
+ formData.append('CONCERN', qbProfiles.join(','));
+ formData.append('SOURCE', 'Behavior Quiz');
+
+ if (BREVO_ENDPOINT.indexOf('YOUR_FORM_ID') === -1) {
+ fetch(BREVO_ENDPOINT, { method: 'POST', body: formData, mode: 'no-cors' }).catch(err => console.error('Brevo error:', err));
+ } else {
+ console.log('[DEV] Behavior Quiz lead captured:', { name, email, phone, profile, picks: qbProfiles });
+ }
+
+ try {
+ const leads = JSON.parse(localStorage.getItem('serUnicoLeads') || '[]');
+ leads.push({ source: 'Behavior Quiz', name, email, phone, profile, picks: qbProfiles, timestamp: new Date().toISOString() });
+ localStorage.setItem('serUnicoLeads', JSON.stringify(leads));
+ } catch (err) { /* silent */ }
+
+ qbEmailGate.classList.remove('active');
+ showQbResult(profile);
+ return false;
+}
+
+function showQbResult(profile) {
+ const data = qbProfileData[profile];
+ document.getElementById('qbResultBadge').textContent = 'Perfil de Comunicação';
+ document.getElementById('qbResultTitle').textContent = data.title;
+ document.getElementById('qbResultTagline').textContent = data.tagline;
+ document.getElementById('qbResultMeaning').textContent = data.meaning;
+ document.getElementById('qbResultNeeds').textContent = data.needs;
+ document.getElementById('qbResultWhen').textContent = data.when;
+ qbResult.classList.add('active');
+ setTimeout(() => qbResult.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+}
+
+function shareQbResult() {
+ const profile = calculateQbProfile();
+ const data = qbProfileData[profile];
+ const shareText = `Acabei de descobrir o estilo de comunicação do meu filho: "${data.title}". Vale a pena fazer o quiz!`;
+ const shareUrl = 'https://www.ser-unico.com/#quiz-comportamento';
+
+ if (navigator.share) {
+ navigator.share({
+ title: 'Quiz Ser Único: Estilo de Comunicação',
+ text: shareText,
+ url: shareUrl
+ }).catch(() => {});
+ } else {
+ // Desktop fallback: copy to clipboard
+ const fullText = shareText + ' ' + shareUrl;
+ if (navigator.clipboard) {
+ navigator.clipboard.writeText(fullText).then(() => {
+ alert('Link copiado! Cole onde quiser partilhar.');
+ });
+ } else {
+ // Older browsers: open WhatsApp web share
+ window.open(`https://wa.me/?text=${encodeURIComponent(fullText)}`, '_blank');
+ }
+ }
+}
+
+updateQbProgress();
+
+// ============ QUIZ LOGIC ============
+let currentStep = 1;
+const totalSteps = 7;
+let totalPoints = 0;
+let answers = [];
+let ageGroup = '';
+let primaryConcern = '';
+let resultBucket = null;
+
+const quizBody = document.getElementById('quizBody');
+const progressBar = document.getElementById('progressBar');
+const counter = document.getElementById('counter');
+const backBtn = document.getElementById('backBtn');
+const quizEmailGate = document.getElementById('quizEmailGate');
+const quizResult = document.getElementById('quizResult');
+
+function updateProgress() {
+ const pct = (currentStep / totalSteps) * 100;
+ progressBar.style.width = pct + '%';
+ counter.textContent = currentStep + ' / ' + totalSteps;
+ backBtn.style.visibility = currentStep > 1 ? 'visible' : 'hidden';
+}
+
+function showStep(step) {
+ document.querySelectorAll('.quiz-step').forEach(el => el.classList.remove('active'));
+ const target = document.querySelector(`.quiz-step[data-step="${step}"]`);
+ if (target) target.classList.add('active');
+ updateProgress();
+}
+
+document.querySelectorAll('.quiz-option').forEach(btn => {
+ btn.addEventListener('click', () => {
+ const pts = parseInt(btn.dataset.points || 0);
+ const age = btn.dataset.age;
+ const concern = btn.dataset.concern;
+ if (age) ageGroup = age;
+ if (concern) primaryConcern = concern;
+ answers[currentStep - 1] = pts;
+
+ if (currentStep < totalSteps) {
+ currentStep++;
+ showStep(currentStep);
+ } else {
+ // Show email gate instead of jumping straight to result
+ totalPoints = answers.reduce((a, b) => a + b, 0);
+ resultBucket = calculateBucket(totalPoints);
+ showEmailGate();
+ }
+ });
+});
+
+backBtn.addEventListener('click', () => {
+ if (currentStep > 1) {
+ currentStep--;
+ showStep(currentStep);
+ }
+});
+
+function calculateBucket(pts) {
+ if (pts <= 3) return 'low';
+ if (pts <= 7) return 'med';
+ if (pts <= 13) return 'high';
+ return 'urgent';
+}
+
+function showEmailGate() {
+ quizBody.style.display = 'none';
+ quizEmailGate.classList.add('active');
+ progressBar.style.width = '100%';
+ setTimeout(() => quizEmailGate.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+}
+
+function submitEmailGate(e) {
+ e.preventDefault();
+ const name = document.getElementById('quizName').value;
+ const email = document.getElementById('quizEmail').value;
+ const phone = document.getElementById('quizPhone').value;
+
+ // ============ BREVO INTEGRATION POINT ============
+ // To connect this form to Brevo:
+ // 1. In Brevo, create a list (e.g., "Leads Ser Único") and note its LIST_ID
+ // 2. In Brevo > Contacts > Contact Attributes, create these custom attributes:
+ // FIRSTNAME (text), TELEFONE (text), CHILD_AGE (text), CONCERN (text),
+ // QUIZ_BUCKET (text), QUIZ_SCORE (number), SOURCE (text)
+ // 3. Go to Brevo > Contacts > Forms > Create form
+ // 4. Choose "I'll use my own design" / "Use a custom form"
+ // 5. Brevo will give you a form endpoint URL like:
+ // https://sibforms.com/serve/MUIFAxxxxxxxxxxxxxxxxxx
+ // 6. Paste that URL into BREVO_ENDPOINT below
+ const BREVO_ENDPOINT = 'https://sibforms.com/serve/YOUR_FORM_ID';
+
+ const formData = new FormData();
+ formData.append('EMAIL', email);
+ formData.append('FIRSTNAME', name);
+ formData.append('TELEFONE', phone);
+ formData.append('CHILD_AGE', ageGroup);
+ formData.append('CONCERN', primaryConcern);
+ formData.append('QUIZ_BUCKET', resultBucket);
+ formData.append('QUIZ_SCORE', totalPoints);
+ formData.append('SOURCE', 'Quiz');
+
+ // Fire and forget, do not block showing the result
+ if (BREVO_ENDPOINT.indexOf('YOUR_FORM_ID') === -1) {
+ fetch(BREVO_ENDPOINT, {
+ method: 'POST',
+ body: formData,
+ mode: 'no-cors' // Brevo accepts form posts cross-origin
+ }).catch(err => console.error('Brevo error:', err));
+ } else {
+ console.log('[DEV] Quiz lead captured (replace BREVO_ENDPOINT to enable):', {
+ name, email, phone, ageGroup, primaryConcern, resultBucket, totalPoints
+ });
+ }
+
+ // Store in localStorage as a backup so the owner can retrieve from browser
+ try {
+ const leads = JSON.parse(localStorage.getItem('serUnicoLeads') || '[]');
+ leads.push({
+ source: 'Quiz', name, email, phone, ageGroup,
+ concern: primaryConcern, bucket: resultBucket, score: totalPoints,
+ timestamp: new Date().toISOString()
+ });
+ localStorage.setItem('serUnicoLeads', JSON.stringify(leads));
+ } catch (err) { /* silent */ }
+
+ // Show result
+ quizEmailGate.classList.remove('active');
+ showResult();
+ return false;
+}
+
+function showResult() {
+ quizResult.classList.add('active');
+
+ const badge = document.getElementById('resultBadge');
+ const title = document.getElementById('resultTitle');
+ const body = document.getElementById('resultBody');
+ const recs = document.getElementById('resultRecs');
+ const urgency = document.getElementById('resultUrgency');
+ const ctas = document.getElementById('resultCtas');
+
+ const resultMap = {
+ low: {
+ badgeClass: 'badge-low',
+ badgeText: '🌱 Marcos no Caminho Certo',
+ title: 'O seu filho parece estar a desenvolver-se dentro do esperado.',
+ body: 'Pelas suas respostas, o desenvolvimento do seu filho parece estar alinhado com o esperado para a idade. Isso é ótimo. Confie no seu instinto, e continue a acompanhar com atenção. <strong>Vigilância parental ativa é sempre a melhor prevenção.</strong>',
+ recsTitle: 'Próximos passos sugeridos:',
+ recs: [
+ 'Continue a observar os marcos do desenvolvimento ao longo dos próximos meses',
+ 'Mantenha consultas regulares de vigilância no centro de saúde',
+ 'Se algo mudar ou voltar a preocupar-se, contacte-nos sem hesitar',
+ 'Acompanhe o nosso Instagram @ser.unico para dicas semanais'
+ ],
+ urgencyHTML: '',
+ cta: 'low'
+ },
+ med: {
+ badgeClass: 'badge-med',
+ badgeText: '💜 Vale a Pena Uma Conversa',
+ title: 'Há alguns sinais que merecem atenção, e clareza.',
+ body: 'As suas respostas indicam alguns indicadores que beneficiariam de avaliação por uma equipa especializada. <strong>Isto não significa que existe um problema</strong>, significa que vale a pena tirar dúvidas com quem percebe do assunto, em vez de continuar a duvidar sozinho/a.',
+ recsTitle: 'O que recomendamos:',
+ recs: [
+ 'Marque uma consulta inicial gratuita de 30 minutos connosco',
+ 'Avaliação observacional com a nossa equipa, sem pressão',
+ 'Falamos sobre o que viu, o que vimos, e se faz sentido fazer mais',
+ 'Capacitação parental disponível, mesmo que não inicie intervenção'
+ ],
+ urgencyHTML: `
+ <h4>⏰ Por que vale a pena ligar esta semana</h4>
+ <p>Cada mês que passa é um mês de janela perdida. Ligue-nos agora para garantir uma das nossas vagas de consulta inicial gratuita este mês.</p>
+ <a href="tel:+351211372027" class="urgency-phone">📞 Ligar Já · 21 137 2027</a>
+ `,
+ cta: 'med'
+ },
+ high: {
+ badgeClass: 'badge-high',
+ badgeText: '🔍 Avaliação Recomendada',
+ title: 'Recomendamos avaliação especializada, quanto antes melhor.',
+ body: 'As suas respostas indicam vários sinais que justificam uma <strong>avaliação especializada do desenvolvimento</strong>. Não é motivo para alarme, é motivo para ação. A evidência é clara: quanto mais cedo se compreende o que se passa, melhores são os resultados de qualquer intervenção que venha a ser necessária. <strong>A sua preocupação é legítima e útil.</strong>',
+ recsTitle: 'Próximos passos prioritários:',
+ recs: [
+ 'Marque uma avaliação de desenvolvimento completa connosco',
+ 'Inclui M-CHAT-R / MOTAS (para os mais pequenos) ou Vineland-3 (crianças mais velhas)',
+ 'Se for indicado, definimos juntos um plano de intervenção ABA',
+ 'Capacitação parental obrigatória desde o primeiro dia'
+ ],
+ urgencyHTML: `
+ <h4>⏰ Esta semana faz diferença</h4>
+ <p>As listas de espera no SNS estão entre 8 e 14 meses. Cada mês conta na janela de intervenção precoce. Ligue hoje e marque a sua avaliação para os próximos dias.</p>
+ <a href="tel:+351211372027" class="urgency-phone">📞 Ligar Agora · 21 137 2027</a>
+ `,
+ cta: 'high'
+ },
+ urgent: {
+ badgeClass: 'badge-urgent',
+ badgeText: '⏰ Prioridade Clínica',
+ title: 'Sugerimos avaliação prioritária e contacto rápido.',
+ body: 'As suas respostas indicam vários sinais clínicos significativos. <strong>Isto não é um diagnóstico</strong>, só uma equipa especializada pode chegar a esse, mas é uma indicação clara de que vale a pena agir <strong>esta semana, não daqui a meses</strong>. A janela da intervenção precoce é real, e cada mês conta no desenvolvimento do seu filho. Estamos aqui, prontos a ouvi-lo.',
+ recsTitle: 'Plano sugerido:',
+ recs: [
+ 'Contacte-nos hoje por telefone, atendemos diretamente em horário laboral',
+ 'Avaliação completa do desenvolvimento ainda esta semana se houver vaga',
+ 'Se confirmado, início de intervenção logo que possível',
+ 'Apoio à família desde o primeiro dia, não enfrenta isto sozinho/a'
+ ],
+ urgencyHTML: `
+ <h4>⏰ Não espere até amanhã</h4>
+ <p>Os sinais que descreveu justificam acção rápida. Temos algumas vagas reservadas para situações de prioridade clínica. Ligue agora, atendemos diretamente.</p>
+ <a href="tel:+351211372027" class="urgency-phone">📞 Ligar Já · 21 137 2027</a>
+ `,
+ cta: 'urgent'
+ }
+ };
+
+ const r = resultMap[resultBucket];
+ badge.className = 'result-badge ' + r.badgeClass;
+ badge.textContent = r.badgeText;
+ title.textContent = r.title;
+ body.innerHTML = r.body;
+ recs.innerHTML = `<h4>${r.recsTitle}</h4><ul>${r.recs.map(x => `<li>${x}</li>`).join('')}</ul>`;
+ urgency.innerHTML = r.urgencyHTML;
+ urgency.style.display = r.urgencyHTML ? 'block' : 'none';
+
+ if (r.cta === 'urgent') {
+ ctas.innerHTML = `
+ <a href="tel:+351211372027" class="btn-primary">📞 Ligar Já</a>
+ <a href="https://wa.me/351913073668?text=Olá!%20Fiz%20o%20quiz%20no%20vosso%20site%20e%20preciso%20de%20avaliação%20prioritária." class="btn-secondary" target="_blank">WhatsApp</a>
+ `;
+ } else if (r.cta === 'high') {
+ ctas.innerHTML = `
+ <a href="tel:+351211372027" class="btn-primary">📞 Ligar e Marcar Avaliação</a>
+ <a href="https://wa.me/351913073668?text=Olá!%20Fiz%20o%20quiz%20e%20gostaria%20de%20marcar%20avaliação." class="btn-secondary" target="_blank">WhatsApp</a>
+ `;
+ } else if (r.cta === 'med') {
+ ctas.innerHTML = `
+ <a href="tel:+351211372027" class="btn-primary">📞 Marcar Conversa Gratuita</a>
+ <a href="https://wa.me/351913073668" class="btn-secondary" target="_blank">WhatsApp</a>
+ `;
+ } else {
+ ctas.innerHTML = `
+ <a href="#aldeia" class="btn-primary">Conhecer A Nossa Aldeia</a>
+ <a href="https://www.instagram.com/ser.unico" class="btn-secondary" target="_blank">Seguir no Instagram</a>
+ `;
+ }
+
+ setTimeout(() => quizResult.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+}
+
+// ============ PRICING GATE MODAL ============
+const pricingModal = document.getElementById('pricingModal');
+const pricingModalContent = document.getElementById('pricingModalContent');
+const pricingModalSuccess = document.getElementById('pricingModalSuccess');
+
+function openPricingGate() {
+ pricingModalContent.style.display = 'block';
+ pricingModalSuccess.classList.remove('show');
+ pricingModal.classList.add('open');
+ document.body.style.overflow = 'hidden';
+}
+
+function closePricingGate() {
+ pricingModal.classList.remove('open');
+ document.body.style.overflow = '';
+}
+
+// Close on ESC
+document.addEventListener('keydown', (e) => {
+ if (e.key === 'Escape' && pricingModal.classList.contains('open')) closePricingGate();
+});
+
+function submitPricingGate(e) {
+ e.preventDefault();
+ const data = {
+ _subject: 'Pedido de Tabela de Valores · Ser Único',
+ nome: document.getElementById('pricingName').value,
+ email: document.getElementById('pricingEmail').value,
+ telefone: document.getElementById('pricingPhone').value,
+ idade_filho: document.getElementById('pricingAge').value,
+ preocupacao: document.getElementById('pricingConcern').value,
+ origem: 'Pricing Modal Gate',
+ timestamp: new Date().toISOString()
+ };
+
+ // ============ BREVO INTEGRATION POINT ============
+ // Same Brevo form endpoint as the quiz, or a separate form if you want
+ // pricing leads in a different list / with different automation
+ const BREVO_ENDPOINT = 'https://sibforms.com/serve/YOUR_FORM_ID';
+
+ const formData = new FormData();
+ formData.append('EMAIL', data.email);
+ formData.append('FIRSTNAME', data.nome);
+ formData.append('TELEFONE', data.telefone);
+ formData.append('CHILD_AGE', data.idade_filho);
+ formData.append('CONCERN', data.preocupacao);
+ formData.append('SOURCE', 'Pricing Modal');
+
+ if (BREVO_ENDPOINT.indexOf('YOUR_FORM_ID') === -1) {
+ fetch(BREVO_ENDPOINT, {
+ method: 'POST',
+ body: formData,
+ mode: 'no-cors'
+ }).catch(err => console.error('Brevo error:', err));
+ } else {
+ console.log('[DEV] Pricing lead captured (replace BREVO_ENDPOINT to enable):', data);
+ }
+
+ // Backup to localStorage
+ try {
+ const leads = JSON.parse(localStorage.getItem('serUnicoLeads') || '[]');
+ leads.push(data);
+ localStorage.setItem('serUnicoLeads', JSON.stringify(leads));
+ } catch (err) { /* silent */ }
+
+ pricingModalContent.style.display = 'none';
+ pricingModalSuccess.classList.add('show');
+ return false;
+}
+
+// ============ MAIN CONTACT FORM ============
+function submitForm(e) {
+ e.preventDefault();
+ const formData = {
+ name: document.getElementById('name').value,
+ email: document.getElementById('email').value,
+ phone: document.getElementById('phone').value,
+ interest: document.getElementById('interest').value,
+ message: document.getElementById('message').value
+ };
+
+ // ============ BREVO INTEGRATION POINT ============
+ // Same setup as the quiz and pricing forms.
+ const BREVO_ENDPOINT = 'https://sibforms.com/serve/YOUR_FORM_ID';
+
+ const payload = new FormData();
+ payload.append('EMAIL', formData.email);
+ payload.append('FIRSTNAME', formData.name);
+ payload.append('TELEFONE', formData.phone);
+ payload.append('INTEREST', formData.interest);
+ payload.append('MESSAGE', formData.message);
+ payload.append('SOURCE', 'Contact Form');
+
+ if (BREVO_ENDPOINT.indexOf('YOUR_FORM_ID') === -1) {
+ fetch(BREVO_ENDPOINT, {
+ method: 'POST',
+ body: payload,
+ mode: 'no-cors'
+ }).catch(err => console.error('Brevo error:', err));
+ } else {
+ console.log('[DEV] Contact form captured (replace BREVO_ENDPOINT to enable):', formData);
+ // Dev-mode fallback: open email client
+ const subject = encodeURIComponent(`Contacto do site: ${formData.interest}`);
+ const body = encodeURIComponent(
+ `Nome: ${formData.name}\nEmail: ${formData.email}\nTelefone: ${formData.phone}\nInteresse: ${formData.interest}\n\nMensagem:\n${formData.message}`
+ );
+ window.location.href = `mailto:geral@ser-unico.com?subject=${subject}&body=${body}`;
+ }
+
+ // Backup to localStorage
+ try {
+ const leads = JSON.parse(localStorage.getItem('serUnicoLeads') || '[]');
+ leads.push({ source: 'Contact', ...formData, timestamp: new Date().toISOString() });
+ localStorage.setItem('serUnicoLeads', JSON.stringify(leads));
+ } catch (err) { /* silent */ }
+
+ document.getElementById('formSuccess').classList.add('show');
+ document.getElementById('contactForm').reset();
+ setTimeout(() => document.getElementById('formSuccess').classList.remove('show'), 8000);
+ return false;
+}
+
+// Smooth scroll close mobile nav
+document.querySelectorAll('.nav-links a').forEach(a => {
+ a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+
+</script>
+
+</body>
+</html>
