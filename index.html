@@ -2890,26 +2890,10 @@ function submitQbEmailGate(e) {
  const email = document.getElementById('qbEmail').value;
  const phone = document.getElementById('qbPhone').value;
 
- const BREVO_ENDPOINT = 'https://sibforms.com/serve/YOUR_FORM_ID';
- const formData = new FormData();
- formData.append('EMAIL', email);
- formData.append('FIRSTNAME', name);
- formData.append('TELEFONE', phone);
- formData.append('QUIZ_BUCKET', profile);
- formData.append('CONCERN', qbProfiles.join(','));
- formData.append('SOURCE', 'Behavior Quiz');
-
- if (BREVO_ENDPOINT.indexOf('YOUR_FORM_ID') === -1) {
- fetch(BREVO_ENDPOINT, { method: 'POST', body: formData, mode: 'no-cors' }).catch(err => console.error('Brevo error:', err));
- } else {
- console.log('[DEV] Behavior Quiz lead captured:', { name, email, phone, profile, picks: qbProfiles });
- }
-
- try {
- const leads = JSON.parse(localStorage.getItem('serUnicoLeads') || '[]');
- leads.push({ source: 'Behavior Quiz', name, email, phone, profile, picks: qbProfiles, timestamp: new Date().toISOString() });
- localStorage.setItem('serUnicoLeads', JSON.stringify(leads));
- } catch (err) { /* silent */ }
+ sendToBrevo({
+ email, FIRSTNAME: name, TELEFONE: phone,
+ QUIZ_BUCKET: profile, CONCERN: qbProfiles.join(','), SOURCE: 'Behavior Quiz'
+ });
 
  qbEmailGate.classList.remove('active');
  showQbResult(profile);
@@ -3034,52 +3018,11 @@ function submitEmailGate(e) {
  const email = document.getElementById('quizEmail').value;
  const phone = document.getElementById('quizPhone').value;
 
- // ============ BREVO INTEGRATION POINT ============
- // To connect this form to Brevo:
- // 1. In Brevo, create a list (e.g., "Leads Ser Único") and note its LIST_ID
- // 2. In Brevo > Contacts > Contact Attributes, create these custom attributes:
- // FIRSTNAME (text), TELEFONE (text), CHILD_AGE (text), CONCERN (text),
- // QUIZ_BUCKET (text), QUIZ_SCORE (number), SOURCE (text)
- // 3. Go to Brevo > Contacts > Forms > Create form
- // 4. Choose "I'll use my own design" / "Use a custom form"
- // 5. Brevo will give you a form endpoint URL like:
- // https://sibforms.com/serve/MUIFAxxxxxxxxxxxxxxxxxx
- // 6. Paste that URL into BREVO_ENDPOINT below
- const BREVO_ENDPOINT = 'https://sibforms.com/serve/YOUR_FORM_ID';
-
- const formData = new FormData();
- formData.append('EMAIL', email);
- formData.append('FIRSTNAME', name);
- formData.append('TELEFONE', phone);
- formData.append('CHILD_AGE', ageGroup);
- formData.append('CONCERN', primaryConcern);
- formData.append('QUIZ_BUCKET', resultBucket);
- formData.append('QUIZ_SCORE', totalPoints);
- formData.append('SOURCE', 'Quiz');
-
- // Fire and forget, do not block showing the result
- if (BREVO_ENDPOINT.indexOf('YOUR_FORM_ID') === -1) {
- fetch(BREVO_ENDPOINT, {
- method: 'POST',
- body: formData,
- mode: 'no-cors' // Brevo accepts form posts cross-origin
- }).catch(err => console.error('Brevo error:', err));
- } else {
- console.log('[DEV] Quiz lead captured (replace BREVO_ENDPOINT to enable):', {
- name, email, phone, ageGroup, primaryConcern, resultBucket, totalPoints
+ sendToBrevo({
+ email, FIRSTNAME: name, TELEFONE: phone,
+ CHILD_AGE: ageGroup, CONCERN: primaryConcern,
+ QUIZ_BUCKET: resultBucket, QUIZ_SCORE: totalPoints, SOURCE: 'Quiz'
  });
- }
-
- // Store in localStorage as a backup so the owner can retrieve from browser
- try {
- const leads = JSON.parse(localStorage.getItem('serUnicoLeads') || '[]');
- leads.push({
- source: 'Quiz', name, email, phone, ageGroup,
- concern: primaryConcern, bucket: resultBucket, score: totalPoints,
- timestamp: new Date().toISOString()
- });
- localStorage.setItem('serUnicoLeads', JSON.stringify(leads));
- } catch (err) { /* silent */ }
 
  // Show result
  quizEmailGate.classList.remove('active');
@@ -3228,49 +3171,31 @@ document.addEventListener('keydown', (e) => {
  if (e.key === 'Escape' && pricingModal.classList.contains('open')) closePricingGate();
 });
 
+// ============ CENTRAL BREVO HELPER ============
+// All forms call this. It POSTs to /api/subscribe (Vercel serverless function)
+// which securely forwards the data to Brevo using the server-side API key.
+// No API keys are exposed in the browser.
+function sendToBrevo(payload) {
+ fetch('/api/subscribe', {
+ method: 'POST',
+ headers: { 'Content-Type': 'application/json' },
+ body: JSON.stringify(payload)
+ })
+ .then(r => r.json())
+ .then(d => { if (!d.ok) console.warn('Brevo response:', d); })
+ .catch(err => console.error('Subscribe error:', err));
+}
+
 function submitPricingGate(e) {
  e.preventDefault();
- const data = {
- _subject: 'Pedido de Tabela de Valores · Ser Único',
- nome: document.getElementById('pricingName').value,
+ sendToBrevo({
  email: document.getElementById('pricingEmail').value,
- telefone: document.getElementById('pricingPhone').value,
- idade_filho: document.getElementById('pricingAge').value,
- preocupacao: document.getElementById('pricingConcern').value,
- origem: 'Pricing Modal Gate',
- timestamp: new Date().toISOString()
- };
-
- // ============ BREVO INTEGRATION POINT ============
- // Same Brevo form endpoint as the quiz, or a separate form if you want
- // pricing leads in a different list / with different automation
- const BREVO_ENDPOINT = 'https://sibforms.com/serve/YOUR_FORM_ID';
-
- const formData = new FormData();
- formData.append('EMAIL', data.email);
- formData.append('FIRSTNAME', data.nome);
- formData.append('TELEFONE', data.telefone);
- formData.append('CHILD_AGE', data.idade_filho);
- formData.append('CONCERN', data.preocupacao);
- formData.append('SOURCE', 'Pricing Modal');
-
- if (BREVO_ENDPOINT.indexOf('YOUR_FORM_ID') === -1) {
- fetch(BREVO_ENDPOINT, {
- method: 'POST',
- body: formData,
- mode: 'no-cors'
- }).catch(err => console.error('Brevo error:', err));
- } else {
- console.log('[DEV] Pricing lead captured (replace BREVO_ENDPOINT to enable):', data);
- }
-
- // Backup to localStorage
- try {
- const leads = JSON.parse(localStorage.getItem('serUnicoLeads') || '[]');
- leads.push(data);
- localStorage.setItem('serUnicoLeads', JSON.stringify(leads));
- } catch (err) { /* silent */ }
-
+ FIRSTNAME: document.getElementById('pricingName').value,
+ TELEFONE: document.getElementById('pricingPhone').value,
+ CHILD_AGE: document.getElementById('pricingAge').value,
+ CONCERN: document.getElementById('pricingConcern').value,
+ SOURCE: 'Pricing Modal'
+ });
  pricingModalContent.style.display = 'none';
  pricingModalSuccess.classList.add('show');
  return false;
@@ -3279,48 +3204,16 @@ function submitPricingGate(e) {
 // ============ MAIN CONTACT FORM ============
 function submitForm(e) {
  e.preventDefault();
- const formData = {
- name: document.getElementById('name').value,
- email: document.getElementById('email').value,
- phone: document.getElementById('phone').value,
- interest: document.getElementById('interest').value,
- message: document.getElementById('message').value
- };
+ const name    = document.getElementById('name').value;
+ const email   = document.getElementById('email').value;
+ const phone   = document.getElementById('phone').value;
+ const interest = document.getElementById('interest').value;
+ const message = document.getElementById('message').value;
 
- // ============ BREVO INTEGRATION POINT ============
- // Same setup as the quiz and pricing forms.
- const BREVO_ENDPOINT = 'https://sibforms.com/serve/YOUR_FORM_ID';
-
- const payload = new FormData();
- payload.append('EMAIL', formData.email);
- payload.append('FIRSTNAME', formData.name);
- payload.append('TELEFONE', formData.phone);
- payload.append('INTEREST', formData.interest);
- payload.append('MESSAGE', formData.message);
- payload.append('SOURCE', 'Contact Form');
-
- if (BREVO_ENDPOINT.indexOf('YOUR_FORM_ID') === -1) {
- fetch(BREVO_ENDPOINT, {
- method: 'POST',
- body: payload,
- mode: 'no-cors'
- }).catch(err => console.error('Brevo error:', err));
- } else {
- console.log('[DEV] Contact form captured (replace BREVO_ENDPOINT to enable):', formData);
- // Dev-mode fallback: open email client
- const subject = encodeURIComponent(`Contacto do site: ${formData.interest}`);
- const body = encodeURIComponent(
- `Nome: ${formData.name}\nEmail: ${formData.email}\nTelefone: ${formData.phone}\nInteresse: ${formData.interest}\n\nMensagem:\n${formData.message}`
- );
- window.location.href = `mailto:geral@ser-unico.com?subject=${subject}&body=${body}`;
- }
-
- // Backup to localStorage
- try {
- const leads = JSON.parse(localStorage.getItem('serUnicoLeads') || '[]');
- leads.push({ source: 'Contact', ...formData, timestamp: new Date().toISOString() });
- localStorage.setItem('serUnicoLeads', JSON.stringify(leads));
- } catch (err) { /* silent */ }
+ sendToBrevo({
+ email, FIRSTNAME: name, TELEFONE: phone,
+ INTEREST: interest, message, SOURCE: 'Contact Form'
+ });
 
  document.getElementById('formSuccess').classList.add('show');
  document.getElementById('contactForm').reset();
