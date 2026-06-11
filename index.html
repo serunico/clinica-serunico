@@ -3172,9 +3172,8 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ============ CENTRAL BREVO HELPER ============
-// All forms call this. It POSTs to /api/subscribe (Vercel serverless function)
-// which securely forwards the data to Brevo using the server-side API key.
-// No API keys are exposed in the browser.
+// Posts to /api/subscribe (Vercel serverless function), which forwards
+// the full attribute set to Brevo using the secure server-side API key.
 function sendToBrevo(payload) {
  fetch('/api/subscribe', {
  method: 'POST',
