@@ -51,8 +51,9 @@
  --aubergine-soft: #5b4377;
  --cream: #faf5ed;
  --cream-warm: #f4ead8;
- --terracotta: #c4654a;
- --terracotta-soft: #d88a72;
+ --terracotta: #e8c66a;
+ --terracotta-soft: #f0d68a;
+ --terracotta-deep: #8a6a1e;
  --sage: #8a9d7e;
  --ink: #241932;
  --muted: #6b5f7d;
@@ -131,7 +132,7 @@ nav {
  font-weight: 500;
  transition: color 0.2s;
 }
-.nav-links a:hover { color: var(--terracotta); }
+.nav-links a:hover { color: var(--terracotta-deep); }
 
 .nav-cta {
  background: var(--aubergine);
@@ -141,7 +142,7 @@ nav {
  font-weight: 500;
  transition: all 0.25s;
 }
-.nav-cta:hover { background: var(--terracotta); transform: translateY(-1px); }
+.nav-cta:hover { background: var(--terracotta); color: var(--aubergine) !important; transform: translateY(-1px); }
 
 .nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
 .nav-burger span { display: block; width: 22px; height: 2px; background: var(--ink); margin: 5px 0; transition: 0.3s; }
@@ -196,7 +197,7 @@ nav {
  font-weight: 500;
  margin-bottom: 1.5rem;
 }
-.hero-eyebrow::before { content: "✦"; color: var(--terracotta); }
+.hero-eyebrow::before { content: "✦"; color: var(--terracotta-deep); }
 
 .hero h1 {
  font-family: 'Fraunces', serif;
@@ -210,7 +211,7 @@ nav {
 .hero h1 em {
  font-style: italic;
  font-weight: 300;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
 }
 
 .hero-sub {
@@ -244,7 +245,7 @@ nav {
  transition: all 0.25s;
  box-shadow: var(--shadow-md);
 }
-.btn-primary:hover { background: var(--terracotta); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.btn-primary:hover { background: var(--terracotta); color: var(--aubergine); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
 .btn-primary .arrow { transition: transform 0.25s; }
 .btn-primary:hover .arrow { transform: translateX(4px); }
 
@@ -326,7 +327,7 @@ nav {
  width: 48px; height: 48px;
  border-radius: 50%;
  background: var(--terracotta);
- color: white;
+ color: var(--aubergine);
  display: flex;
  align-items: center;
  justify-content: center;
@@ -403,7 +404,7 @@ section { padding: 6rem 2rem; }
  font-size: 0.8rem;
  letter-spacing: 0.15em;
  text-transform: uppercase;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  font-weight: 600;
  margin-bottom: 1rem;
 }
@@ -417,7 +418,7 @@ section { padding: 6rem 2rem; }
  color: var(--aubergine);
  margin-bottom: 1.25rem;
 }
-.section-title em { font-style: italic; color: var(--terracotta); font-weight: 300; }
+.section-title em { font-style: italic; color: var(--terracotta-deep); font-weight: 300; }
 
 .section-lead {
  font-size: 1.15rem;
@@ -519,7 +520,7 @@ section { padding: 6rem 2rem; }
  font-size: 0.8rem;
  letter-spacing: 0.15em;
  text-transform: uppercase;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  font-weight: 600;
  margin-bottom: 0.75rem;
 }
@@ -568,7 +569,7 @@ section { padding: 6rem 2rem; }
  flex-shrink: 0;
  transition: all 0.2s;
 }
-.quiz-option:hover .dot { background: var(--terracotta); border-color: var(--terracotta); }
+.quiz-option:hover .dot { background: var(--terracotta); border-color: var(--terracotta-deep); }
 
 .quiz-nav {
  margin-top: 2rem;
@@ -642,7 +643,7 @@ section { padding: 6rem 2rem; }
  transition: all 0.25s;
  margin-top: 0.5rem;
 }
-.email-gate-form .form-submit:hover { background: var(--terracotta); transform: translateY(-1px); }
+.email-gate-form .form-submit:hover { background: var(--terracotta); color: var(--aubergine); transform: translateY(-1px); }
 .email-gate-privacy {
  font-size: 0.8rem;
  color: var(--muted);
@@ -659,11 +660,11 @@ section { padding: 6rem 2rem; }
  color: var(--ink);
  line-height: 1.55;
 }
-.email-gate-urgency strong { color: var(--terracotta); }
+.email-gate-urgency strong { color: var(--terracotta-deep); }
 
 /* Result urgency banner */
 .result-urgency {
- background: linear-gradient(135deg, var(--terracotta) 0%, #a04936 100%);
+ background: linear-gradient(135deg, var(--aubergine) 0%, #241932 100%);
  color: white;
  padding: 1.5rem 1.6rem;
  border-radius: 16px;
@@ -686,7 +687,7 @@ section { padding: 6rem 2rem; }
  align-items: center;
  gap: 0.5rem;
  background: white;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  padding: 0.7rem 1.2rem;
  border-radius: 100px;
  text-decoration: none;
@@ -705,7 +706,7 @@ section { padding: 6rem 2rem; }
 }
 .badge-low { background: #e8f0e3; color: #4a6b3a; }
 .badge-med { background: var(--lavender-soft); color: var(--aubergine); }
-.badge-high { background: #f5dcc8; color: var(--terracotta); }
+.badge-high { background: #f5e8c8; color: #8a6a1e; }
 .badge-urgent { background: #f8d4cc; color: #8a3a28; }
 
 .result-title {
@@ -747,7 +748,7 @@ section { padding: 6rem 2rem; }
  content: "✓";
  position: absolute;
  left: 0;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  font-weight: 700;
 }
 
@@ -901,7 +902,7 @@ section { padding: 6rem 2rem; }
 }
 .price-best .best-tag {
  background: var(--terracotta);
- color: white;
+ color: var(--aubergine);
  font-size: 0.7rem;
  font-weight: 700;
  padding: 0.2rem 0.5rem;
@@ -1070,7 +1071,7 @@ section { padding: 6rem 2rem; }
  content: "→";
  position: absolute;
  left: 0;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  font-weight: 700;
 }
 .pricing-modal-success {
@@ -1140,7 +1141,7 @@ section { padding: 6rem 2rem; }
  font-size: 0.78rem;
  letter-spacing: 0.15em;
  text-transform: uppercase;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  font-weight: 600;
  margin-bottom: 0.85rem;
 }
@@ -1200,7 +1201,7 @@ section { padding: 6rem 2rem; }
 .qb-reveal-badge {
  font-size: 0.8rem;
  font-weight: 700;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  letter-spacing: 0.05em;
  margin-bottom: 0.6rem;
  text-transform: uppercase;
@@ -1227,6 +1228,7 @@ section { padding: 6rem 2rem; }
 }
 .qb-continue:hover {
  background: var(--terracotta);
+ color: var(--aubergine);
  transform: translateY(-1px);
 }
 .qb-counter {
@@ -1268,7 +1270,7 @@ section { padding: 6rem 2rem; }
  font-family: 'Fraunces', serif;
  font-style: italic;
  font-size: 1.15rem;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  margin-bottom: 2rem;
  line-height: 1.4;
 }
@@ -1294,7 +1296,7 @@ section { padding: 6rem 2rem; }
  border-left: 3px solid var(--terracotta);
  margin-top: 2rem;
 }
-.qb-result-callout h4 { color: var(--terracotta); }
+.qb-result-callout h4 { color: var(--terracotta-deep); }
 .qb-result-ctas {
  display: flex;
  gap: 0.75rem;
@@ -1349,7 +1351,7 @@ section { padding: 6rem 2rem; }
  font-size: 2.4rem;
  line-height: 1;
  letter-spacing: -0.02em;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  font-weight: 500;
  flex-shrink: 0;
  min-width: 110px;
@@ -1399,7 +1401,7 @@ section { padding: 6rem 2rem; }
 }
 .service-card .service-meta {
  font-size: 0.8rem;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  letter-spacing: 0.1em;
  text-transform: uppercase;
  font-weight: 600;
@@ -1622,7 +1624,7 @@ section { padding: 6rem 2rem; }
 .faq-q::after {
  content: "+";
  font-size: 1.5rem;
- color: var(--terracotta);
+ color: var(--terracotta-deep);
  font-weight: 400;
  transition: transform 0.25s;
  flex-shrink: 0;
@@ -1732,7 +1734,7 @@ section { padding: 6rem 2rem; }
  transition: all 0.25s;
  margin-top: 0.5rem;
 }
-.form-submit:hover { background: var(--terracotta); }
+.form-submit:hover { background: var(--terracotta); color: var(--aubergine); }
 .form-note { font-size: 0.85rem; color: var(--muted); margin-top: 1rem; text-align: center; }
 .form-success {
  display: none;
@@ -2532,7 +2534,7 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
  <div class="container container-narrow">
  <span class="section-eyebrow">Perguntas frequentes</span>
  <h2 class="section-title">Tudo o que <em>quer saber.</em></h2>
- <p class="section-lead">Reunimos as dúvidas mais comuns das famílias que nos contactam pela primeira vez. Se a sua não estiver aqui, <a href="#contacto" style="color: var(--terracotta); text-decoration: underline;">escreva-nos</a>.</p>
+ <p class="section-lead">Reunimos as dúvidas mais comuns das famílias que nos contactam pela primeira vez. Se a sua não estiver aqui, <a href="#contacto" style="color: var(--terracotta-deep); text-decoration: underline;">escreva-nos</a>.</p>
 
  <div class="faq-list">
  <details class="faq-item">
