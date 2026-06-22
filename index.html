@@ -1093,238 +1093,6 @@ section { padding: 6rem 2rem; }
  margin: 0 auto 1rem;
 }
 
-/* ============ QUIZ B (BEHAVIOR / COMMUNICATION) ============ */
-.qb-section {
- background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
- padding: 6rem 2rem;
- position: relative;
- overflow: hidden;
-}
-.qb-section::before {
- content: "";
- position: absolute;
- top: -100px; right: -100px;
- width: 400px; height: 400px;
- background: radial-gradient(circle, var(--lavender) 0%, transparent 60%);
- opacity: 0.4;
- pointer-events: none;
-}
-.qb-intro {
- text-align: center;
- max-width: 760px;
- margin: 0 auto 3rem;
- position: relative;
- z-index: 1;
-}
-.qb-widget {
- background: white;
- border-radius: 32px;
- box-shadow: var(--shadow-lg);
- border: 1px solid var(--border);
- overflow: hidden;
- max-width: 780px;
- margin: 0 auto;
- position: relative;
- z-index: 1;
-}
-.qb-progress-bar {
- height: 100%;
- background: linear-gradient(90deg, var(--terracotta), var(--aubergine-soft));
- width: 0%;
- transition: width 0.4s ease;
-}
-.qb-body { padding: 3rem 2.5rem 2rem; }
-.qb-step { display: none; }
-.qb-step.active { display: block; animation: fadeUp 0.4s ease; }
-.qb-step-label {
- display: inline-block;
- font-size: 0.78rem;
- letter-spacing: 0.15em;
- text-transform: uppercase;
- color: var(--terracotta-deep);
- font-weight: 600;
- margin-bottom: 0.85rem;
-}
-.qb-question {
- font-family: 'Fraunces', serif;
- font-size: clamp(1.4rem, 2.8vw, 1.85rem);
- line-height: 1.2;
- color: var(--aubergine);
- margin-bottom: 1.75rem;
- font-weight: 500;
- letter-spacing: -0.015em;
-}
-.qb-options {
- display: flex;
- flex-direction: column;
- gap: 0.6rem;
- margin-bottom: 1rem;
-}
-.qb-option {
- background: var(--cream);
- border: 1.5px solid transparent;
- padding: 1rem 1.2rem;
- border-radius: 14px;
- text-align: left;
- cursor: pointer;
- font-family: inherit;
- font-size: 0.97rem;
- color: var(--ink);
- transition: all 0.2s;
- line-height: 1.4;
-}
-.qb-option:hover:not(.selected):not(.disabled) {
- background: var(--lavender-soft);
- border-color: var(--lavender-deep);
- transform: translateX(2px);
-}
-.qb-option.selected {
- background: var(--lavender-soft);
- border-color: var(--aubergine);
- box-shadow: 0 4px 14px rgba(61, 42, 82, 0.12);
-}
-.qb-option.disabled {
- opacity: 0.45;
- cursor: not-allowed;
- pointer-events: none;
-}
-.qb-reveal {
- display: none;
- background: linear-gradient(135deg, var(--lavender-soft) 0%, var(--cream-warm) 100%);
- padding: 1.5rem 1.5rem 1.4rem;
- border-radius: 18px;
- margin-top: 1rem;
- border-left: 3px solid var(--terracotta);
- animation: fadeUp 0.4s ease;
-}
-.qb-reveal.show { display: block; }
-.qb-reveal-badge {
- font-size: 0.8rem;
- font-weight: 700;
- color: var(--terracotta-deep);
- letter-spacing: 0.05em;
- margin-bottom: 0.6rem;
- text-transform: uppercase;
-}
-.qb-reveal-text {
- font-family: 'Fraunces', serif;
- font-style: italic;
- font-size: 1.05rem;
- line-height: 1.5;
- color: var(--aubergine);
- margin-bottom: 1.1rem;
-}
-.qb-continue {
- background: var(--aubergine);
- color: var(--cream);
- padding: 0.7rem 1.3rem;
- border-radius: 100px;
- border: none;
- font-family: inherit;
- font-size: 0.93rem;
- font-weight: 500;
- cursor: pointer;
- transition: all 0.2s;
-}
-.qb-continue:hover {
- background: var(--terracotta);
- color: var(--aubergine);
- transform: translateY(-1px);
-}
-.qb-counter {
- text-align: center;
- font-size: 0.82rem;
- color: var(--muted);
- padding: 0 0 1.5rem;
-}
-
-/* QB Email Gate */
-.qb-email-gate { display: none; padding: 3rem 2.5rem; text-align: left; }
-.qb-email-gate.active { display: block; animation: fadeUp 0.5s ease; }
-
-/* QB Result */
-.qb-result { display: none; padding: 3rem 2.5rem; }
-.qb-result.active { display: block; animation: fadeUp 0.5s ease; }
-.qb-result-badge {
- display: inline-block;
- background: var(--lavender);
- color: var(--aubergine);
- padding: 0.4rem 0.9rem;
- border-radius: 100px;
- font-size: 0.78rem;
- font-weight: 700;
- letter-spacing: 0.1em;
- text-transform: uppercase;
- margin-bottom: 1rem;
-}
-.qb-result-title {
- font-family: 'Fraunces', serif;
- font-size: clamp(1.8rem, 3.5vw, 2.4rem);
- line-height: 1.1;
- color: var(--aubergine);
- margin-bottom: 0.6rem;
- letter-spacing: -0.02em;
- font-weight: 500;
-}
-.qb-result-tagline {
- font-family: 'Fraunces', serif;
- font-style: italic;
- font-size: 1.15rem;
- color: var(--terracotta-deep);
- margin-bottom: 2rem;
- line-height: 1.4;
-}
-.qb-result-section {
- margin-bottom: 1.5rem;
-}
-.qb-result-section h4 {
- font-family: 'Fraunces', serif;
- font-size: 1.05rem;
- color: var(--aubergine);
- margin-bottom: 0.5rem;
- font-weight: 600;
-}
-.qb-result-section p {
- color: var(--ink);
- line-height: 1.65;
- font-size: 1rem;
-}
-.qb-result-callout {
- background: var(--cream);
- padding: 1.25rem 1.4rem;
- border-radius: 16px;
- border-left: 3px solid var(--terracotta);
- margin-top: 2rem;
-}
-.qb-result-callout h4 { color: var(--terracotta-deep); }
-.qb-result-ctas {
- display: flex;
- gap: 0.75rem;
- flex-wrap: wrap;
- margin: 2rem 0 1.25rem;
-}
-.qb-share-btn {
- background: var(--lavender) !important;
- color: var(--aubergine) !important;
- border-color: var(--lavender) !important;
-}
-.qb-share-btn:hover {
- background: var(--lavender-deep) !important;
- color: var(--cream) !important;
-}
-.qb-result-disclaimer {
- font-size: 0.82rem;
- color: var(--muted);
- font-style: italic;
- line-height: 1.5;
- padding-top: 1rem;
- border-top: 1px solid var(--border);
-}
-
-@media (max-width: 600px) {
- .qb-body, .qb-email-gate, .qb-result { padding: 2rem 1.5rem; }
- .qb-question { font-size: 1.3rem; }
-}
 .why-now-section { background: var(--cream); padding: 5rem 2rem; }
 .why-now-grid {
  display: grid;
@@ -1833,7 +1601,6 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
  Ser Único
  </a>
  <ul class="nav-links" id="navLinks">
- <li><a href="#quiz-comportamento">Quiz Comunicação</a></li>
  <li><a href="#aba">Intervenção ABA</a></li>
  <li><a href="#psicologia">Psicologia</a></li>
  <li><a href="#quiz">Quiz Avaliação</a></li>
@@ -1858,7 +1625,7 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
  <h1>O seu instinto<br><em>está certo.</em></h1>
  <p class="hero-sub">Se algo no seu filho o preocupa, comunicação, comportamento, interação, vale a pena perceber porquê. Faça o nosso <strong>quiz gratuito de 3 minutos</strong> e descubra o estilo de comunicação do seu filho.</p>
  <div class="hero-ctas">
- <a href="#quiz-comportamento" class="btn-primary">Fazer Quiz Gratuito <span class="arrow">→</span></a>
+ <a href="#quiz" class="btn-primary">Fazer Quiz Gratuito <span class="arrow">→</span></a>
  <a href="#aba" class="btn-secondary">Conhecer a Intervenção ABA</a>
  </div>
  <div class="hero-meta">
@@ -1874,11 +1641,11 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
  </div>
  <p class="quote-author">, Equipa Ser Único</p>
  </div>
- <a href="#quiz-comportamento" class="hero-card hero-card-quiz">
+ <a href="/bingo.html" class="hero-card hero-card-quiz">
  <div class="quiz-icon">✦</div>
- <strong>Quiz Gratuito</strong>
- <span>5 cenários · 3 minutos</span>
- <span style="background: var(--aubergine); color: var(--cream); padding: 0.5rem 1rem; border-radius: 100px; font-size: 0.85rem; font-weight: 500;">Começar agora</span>
+ <strong>Bingo da Parentalidade</strong>
+ <span>Quantos já fez hoje?</span>
+ <span style="background: var(--aubergine); color: var(--cream); padding: 0.5rem 1rem; border-radius: 100px; font-size: 0.85rem; font-weight: 500;">Jogar agora</span>
  </a>
  </div>
  </div>
@@ -1894,155 +1661,6 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
  </div>
 </div>
 
-<!-- ============ QUIZ B: BEHAVIOR AS COMMUNICATION ============ -->
-<section class="qb-section" id="quiz-comportamento">
- <div class="container">
- <div class="qb-intro">
- <span class="section-eyebrow">Quiz Gratuito · 5 cenários · 3 minutos</span>
- <h2 class="section-title">O que está o seu filho a <em>tentar dizer-lhe?</em></h2>
- <p class="section-lead" style="margin-left: auto; margin-right: auto;">Cada comportamento é uma forma de comunicação, mesmo quando não há palavras. Faça este quiz e descubra o estilo de comunicação do seu filho, com a lente de quem trabalha com isto todos os dias.</p>
- </div>
-
- <div class="qb-widget">
- <div class="quiz-progress"><div class="qb-progress-bar" id="qbProgressBar"></div></div>
-
- <div class="qb-body" id="qbBody">
-
- <!-- Scenario 1 -->
- <div class="qb-step active" data-step="1">
- <span class="qb-step-label">Cenário 1 de 5 · Transições</span>
- <h3 class="qb-question">É hora de sair do parque. Como reage o seu filho normalmente?</h3>
- <div class="qb-options">
- <button class="qb-option" data-profile="conector">Pede mais um pouco, mas acaba por vir</button>
- <button class="qb-option" data-profile="decifrador">Tenho de avisar 3 ou 4 vezes antes de conseguir</button>
- <button class="qb-option" data-profile="decifrador">Acaba quase sempre em birra ou colapso</button>
- <button class="qb-option" data-profile="explorador">Foge, esconde-se, ou ignora-me completamente</button>
- </div>
- <div class="qb-reveal" id="qb-reveal-1">
- <div class="qb-reveal-badge">💡 Sabia que…</div>
- <p class="qb-reveal-text">As transições são uma das tarefas mais difíceis para o cérebro de uma criança, especialmente entre os 18 meses e os 5 anos. Não é teimosia. É o cérebro a pedir tempo para mudar de marcha.</p>
- <button class="qb-continue" onclick="nextQbStep()">Próximo cenário →</button>
- </div>
- </div>
-
- <!-- Scenario 2 -->
- <div class="qb-step" data-step="2">
- <span class="qb-step-label">Cenário 2 de 5 · Comunicação</span>
- <h3 class="qb-question">O seu filho quer um copo de água. Como pede?</h3>
- <div class="qb-options">
- <button class="qb-option" data-profile="conector">Diz "água" ou usa palavras</button>
- <button class="qb-option" data-profile="decifrador">Puxa-me pela mão até à torneira</button>
- <button class="qb-option" data-profile="decifrador">Aponta sem som, ou faz um som sem palavra</button>
- <button class="qb-option" data-profile="decifrador">Chora ou grita até eu adivinhar</button>
- </div>
- <div class="qb-reveal" id="qb-reveal-2">
- <div class="qb-reveal-badge">💡 Sabia que…</div>
- <p class="qb-reveal-text">Quando uma criança puxa pela mão em vez de pedir, está a usar a estratégia de comunicação mais antiga da humanidade. Funciona, mas limita o desenvolvimento da linguagem. É um dos primeiros sinais que avaliamos.</p>
- <button class="qb-continue" onclick="nextQbStep()">Próximo cenário →</button>
- </div>
- </div>
-
- <!-- Scenario 3 -->
- <div class="qb-step" data-step="3">
- <span class="qb-step-label">Cenário 3 de 5 · Brincadeira</span>
- <h3 class="qb-question">Quando põe um conjunto de carrinhos no chão, o que faz?</h3>
- <div class="qb-options">
- <button class="qb-option" data-profile="conector">Inventa histórias, faz vroom vroom</button>
- <button class="qb-option" data-profile="explorador">Alinha-os por ordem, cor ou tamanho</button>
- <button class="qb-option" data-profile="explorador">Pega num só e gira a roda durante muito tempo</button>
- <button class="qb-option" data-profile="observador">Não chega aos carrinhos, prefere outra coisa</button>
- </div>
- <div class="qb-reveal" id="qb-reveal-3">
- <div class="qb-reveal-badge">💡 Sabia que…</div>
- <p class="qb-reveal-text">Alinhar objetos, girar rodas, repetir movimentos: são formas legítimas de exploração sensorial. Para algumas crianças, isto não é estranho. É como o mundo faz sentido. O trabalho não é eliminar estas brincadeiras, é alargar o repertório.</p>
- <button class="qb-continue" onclick="nextQbStep()">Próximo cenário →</button>
- </div>
- </div>
-
- <!-- Scenario 4 -->
- <div class="qb-step" data-step="4">
- <span class="qb-step-label">Cenário 4 de 5 · Frustração</span>
- <h3 class="qb-question">Não consegue encaixar uma peça do puzzle. O que faz tipicamente?</h3>
- <div class="qb-options">
- <button class="qb-option" data-profile="conector">Pede ajuda ou tenta de novo</button>
- <button class="qb-option" data-profile="observador">Larga e muda de atividade</button>
- <button class="qb-option" data-profile="decifrador">Atira a peça, chora, sai a correr</button>
- <button class="qb-option" data-profile="decifrador">Bate em si próprio ou na superfície</button>
- </div>
- <div class="qb-reveal" id="qb-reveal-4">
- <div class="qb-reveal-badge">💡 Sabia que…</div>
- <p class="qb-reveal-text">Uma criança que se bate quando está frustrada não está a fazer pirraça. Está a pedir ajuda para se regular. Castigar não funciona. Ensinar uma alternativa funciona, e é exatamente o que fazemos no plano de intervenção.</p>
- <button class="qb-continue" onclick="nextQbStep()">Próximo cenário →</button>
- </div>
- </div>
-
- <!-- Scenario 5 -->
- <div class="qb-step" data-step="5">
- <span class="qb-step-label">Cenário 5 de 5 · Conexão</span>
- <h3 class="qb-question">O seu filho chega da escola ou da creche. Como o cumprimenta?</h3>
- <div class="qb-options">
- <button class="qb-option" data-profile="conector">Corre para mim a sorrir, conta o dia</button>
- <button class="qb-option" data-profile="conector">Vem ao colo se eu chamar</button>
- <button class="qb-option" data-profile="observador">Olha brevemente e segue para o que queria fazer</button>
- <button class="qb-option" data-profile="observador">Não parece notar que eu estou ali</button>
- </div>
- <div class="qb-reveal" id="qb-reveal-5">
- <div class="qb-reveal-badge">💡 Sabia que…</div>
- <p class="qb-reveal-text">O contacto social não tem uma forma certa. Algumas crianças expressam ligação com palavras e abraços. Outras com presença silenciosa, ou partilhando um interesse. Compreender o estilo do seu filho é o primeiro passo para o ajudar a expandi-lo.</p>
- <button class="qb-continue" onclick="finishQb()">Ver o perfil do meu filho →</button>
- </div>
- </div>
-
- <div class="qb-counter" id="qbCounter">1 / 5</div>
- </div>
-
- <!-- Email Gate -->
- <div class="qb-email-gate" id="qbEmailGate">
- <div class="email-gate-icon">💜</div>
- <span class="qb-step-label">O seu resultado está quase pronto</span>
- <h3 class="qb-question">Para onde enviamos o perfil personalizado do seu filho?</h3>
- <p class="email-gate-sub">Receba também o nosso <strong>Guia de Comunicação Infantil (PDF)</strong>, com estratégias práticas adaptadas ao perfil do seu filho. Sem custo.</p>
-
- <form id="qbEmailForm" class="email-gate-form" onsubmit="return submitQbEmailGate(event)">
- <div class="form-row"><input type="text" id="qbName" placeholder="O seu nome" required /></div>
- <div class="form-row"><input type="email" id="qbEmail" placeholder="o-seu-email@exemplo.com" required /></div>
- <div class="form-row"><input type="tel" id="qbPhone" placeholder="Telefone (opcional)" /></div>
- <button type="submit" class="form-submit">Ver o Perfil do Meu Filho →</button>
- <p class="email-gate-privacy">Sem spam. Sem partilhar com terceiros. Pode pedir para apagar a qualquer momento.</p>
- </form>
- </div>
-
- <!-- Result -->
- <div class="qb-result" id="qbResult">
- <div class="qb-result-badge" id="qbResultBadge">Perfil</div>
- <h3 class="qb-result-title" id="qbResultTitle"></h3>
- <p class="qb-result-tagline" id="qbResultTagline"></p>
-
- <div class="qb-result-section">
- <h4>O que isto significa</h4>
- <p id="qbResultMeaning"></p>
- </div>
-
- <div class="qb-result-section">
- <h4>O que o seu filho precisa para prosperar</h4>
- <p id="qbResultNeeds"></p>
- </div>
-
- <div class="qb-result-section qb-result-callout">
- <h4>Quando vale a pena conversar connosco</h4>
- <p id="qbResultWhen"></p>
- </div>
-
- <div class="qb-result-ctas">
- <button onclick="shareQbResult()" class="btn-secondary qb-share-btn">📲 Partilhar este quiz</button>
- <a href="tel:+351211372027" class="btn-primary">📞 Marcar Conversa Gratuita</a>
- </div>
-
- <p class="qb-result-disclaimer">Este quiz é um ponto de partida para reflexão, não um diagnóstico. Cada criança é única e merece avaliação individual.</p>
- </div>
- </div>
- </div>
-</section>
 
 <!-- ============ PROBLEM AGITATION ============ -->
 <section class="problem">
@@ -2214,10 +1832,19 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
 
  <!-- Email Capture Gate -->
  <div class="quiz-email-gate" id="quizEmailGate">
- <div class="email-gate-icon">📋</div>
- <span class="quiz-step-label">Quase pronto</span>
- <h3 class="quiz-question">Para onde enviamos o seu resultado personalizado?</h3>
- <p class="email-gate-sub">Receba também o nosso <strong>Guia de Marcos do Desenvolvimento (0 a 6 anos)</strong>, em PDF, sem custo. E se precisar, ligue-nos diretamente: temos algumas vagas este mês na Lisboa e Vale do Tejo.</p>
+ <!-- TEASER RESULT -->
+ <div id="quizTeaser">
+ <span class="result-badge" id="teaserBadge">Avaliação</span>
+ <h3 class="result-title" id="teaserTitle" style="margin-bottom:0.8rem;">O seu resultado</h3>
+ <p id="teaserBody" style="font-size:1.05rem;color:var(--aubergine-soft);line-height:1.65;margin-bottom:0;"></p>
+ </div>
+
+ <!-- DIVIDER -->
+ <div style="width:60px;height:3px;background:var(--lavender-deep);border-radius:2px;margin:2rem 0;"></div>
+
+ <!-- EMAIL FORM -->
+ <h3 class="quiz-question" style="font-size:1.25rem;margin-bottom:0.5rem;">Quer a orientação completa?</h3>
+ <p class="email-gate-sub">Receba o resultado detalhado com recomendações personalizadas, mais o nosso <strong>Guia de Marcos do Desenvolvimento (0 a 6 anos)</strong> em PDF, sem custo.</p>
 
  <form id="emailGateForm" class="email-gate-form" onsubmit="return submitEmailGate(event)">
  <div class="form-row">
@@ -2227,15 +1854,11 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
  <input type="email" id="quizEmail" placeholder="o-seu-email@exemplo.com" required />
  </div>
  <div class="form-row">
- <input type="tel" id="quizPhone" placeholder="Telefone (opcional, ligamos se preferir)" />
+ <input type="tel" id="quizPhone" placeholder="Telefone (opcional)" />
  </div>
- <button type="submit" class="form-submit">Ver o Meu Resultado →</button>
- <p class="email-gate-privacy">Sem spam. Sem partilhar com terceiros. Pode pedir para apagar a qualquer momento.</p>
+ <button type="submit" class="form-submit">Ver Orientação Completa →</button>
+ <p class="email-gate-privacy">Sem spam. Sem partilhar com terceiros.</p>
  </form>
-
- <div class="email-gate-urgency">
- <strong>⏰ Vagas limitadas:</strong> as listas de espera no SNS estão entre 8 e 14 meses. Quanto mais cedo agir, melhor a janela de intervenção.
- </div>
  </div>
 
  <!-- Result -->
@@ -2696,7 +2319,6 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
  <div class="footer-col">
  <h5>Recursos</h5>
  <ul>
- <li><a href="#quiz-comportamento">Quiz Comunicação</a></li>
  <li><a href="#quiz">Quiz Avaliação</a></li>
  <li><a href="#faq">Perguntas Frequentes</a></li>
  <li><a href="#aldeia">A Nossa Abordagem</a></li>
@@ -2783,170 +2405,6 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
 </div>
 
 <script>
-// ============ QUIZ B (BEHAVIOR / COMMUNICATION) ============
-let qbCurrentStep = 1;
-const qbTotalSteps = 5;
-const qbProfiles = []; // collected profile picks
-
-const qbBody = document.getElementById('qbBody');
-const qbProgressBar = document.getElementById('qbProgressBar');
-const qbCounter = document.getElementById('qbCounter');
-const qbEmailGate = document.getElementById('qbEmailGate');
-const qbResult = document.getElementById('qbResult');
-
-function updateQbProgress() {
- const pct = (qbCurrentStep / qbTotalSteps) * 100;
- qbProgressBar.style.width = pct + '%';
- qbCounter.textContent = qbCurrentStep + ' / ' + qbTotalSteps;
-}
-
-// Attach click handlers to all qb-option buttons
-document.querySelectorAll('.qb-option').forEach(btn => {
- btn.addEventListener('click', () => {
- const step = btn.closest('.qb-step');
- if (!step) return;
- const stepNum = parseInt(step.dataset.step);
- // Mark selected, disable siblings
- step.querySelectorAll('.qb-option').forEach(o => {
- o.classList.add('disabled');
- o.classList.remove('selected');
- });
- btn.classList.add('selected');
- btn.classList.remove('disabled');
- // Store the profile pick
- qbProfiles[stepNum - 1] = btn.dataset.profile;
- // Show the reveal
- const reveal = step.querySelector('.qb-reveal');
- if (reveal) reveal.classList.add('show');
- // Smooth scroll to reveal
- setTimeout(() => {
- reveal.scrollIntoView({ behavior: 'smooth', block: 'center' });
- }, 80);
- });
-});
-
-function nextQbStep() {
- // Hide current step
- document.querySelectorAll('.qb-step').forEach(el => el.classList.remove('active'));
- qbCurrentStep++;
- const next = document.querySelector(`.qb-step[data-step="${qbCurrentStep}"]`);
- if (next) {
- next.classList.add('active');
- updateQbProgress();
- setTimeout(() => next.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
- }
-}
-
-function finishQb() {
- // Hide quiz body, show email gate
- qbBody.style.display = 'none';
- qbEmailGate.classList.add('active');
- qbProgressBar.style.width = '100%';
- setTimeout(() => qbEmailGate.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-}
-
-function calculateQbProfile() {
- // Count occurrences of each profile
- const counts = { conector: 0, decifrador: 0, explorador: 0, observador: 0 };
- qbProfiles.forEach(p => { if (counts[p] !== undefined) counts[p]++; });
- // Tie-breaker priority: decifrador > explorador > observador > conector
- const priority = ['decifrador', 'explorador', 'observador', 'conector'];
- let winner = 'conector';
- let maxCount = -1;
- priority.forEach(p => {
- if (counts[p] > maxCount) { maxCount = counts[p]; winner = p; }
- });
- return winner;
-}
-
-const qbProfileData = {
- conector: {
- title: 'O Conector',
- tagline: 'O seu filho comunica com palavras, gestos e olhar.',
- meaning: 'Crianças neste perfil usam a linguagem como ferramenta principal de comunicação. Procuram ativamente a interação, adaptam-se a mudanças com algum apoio, e expressam afeto de forma reconhecível. Não há sinais clínicos evidentes nas respostas, o que é uma excelente notícia.',
- needs: 'Estas crianças prosperam quando os adultos validam as suas tentativas de comunicação, mesmo as imperfeitas, e quando há espaço para conversa real. O foco neste perfil é alargar vocabulário emocional, treinar regulação em momentos difíceis, e dar contexto para a complexidade do mundo.',
- when: 'Vale a pena conversar connosco se notar regressões súbitas, se a comunicação flui bem com adultos mas não com pares, ou se há ansiedade, dificuldades escolares ou fratrias a gerir. A psicologia infantil pode fazer uma grande diferença.'
- },
- decifrador: {
- title: 'O Decifrador',
- tagline: 'O seu filho ainda não tem todas as palavras. Mas tem muito a dizer.',
- meaning: 'Crianças neste perfil ainda estão a construir o seu sistema de comunicação. Usam o corpo, o comportamento, o tom: e você é o tradutor. As birras intensas, os puxões pela mão, os sons sem palavra, são tudo formas legítimas de tentar comunicar. O que parece desafio comportamental é, quase sempre, dificuldade de comunicação.',
- needs: 'Crianças neste perfil precisam de adultos que vejam o comportamento como linguagem, não como mau comportamento. Estratégias como AAC (Comunicação Aumentativa e Alternativa), modelagem de pedidos com imagens, e construção sistemática de vocabulário podem acelerar muito o desenvolvimento. A intervenção precoce faz diferença real.',
- when: 'Este perfil beneficia muito de avaliação especializada, idealmente antes dos 4 anos. Quanto mais cedo se compreende o sistema de comunicação do seu filho, mais opções existem para o expandir. Não há perda em saber, há tudo a ganhar.'
- },
- explorador: {
- title: 'O Explorador Sensorial',
- tagline: 'O seu filho explora o mundo pelo movimento, pela textura, pela repetição.',
- meaning: 'Crianças neste perfil usam os sentidos como mapa. Os padrões e as repetições fazem-nas sentir seguras. A brincadeira pode parecer estranha aos olhos dos adultos, alinhar, girar, repetir, mas é como o cérebro está a organizar o mundo. Não há nada de errado com isto. É uma forma de estar.',
- needs: 'Crianças neste perfil precisam de um ambiente que respeite as suas necessidades sensoriais e de adultos que alarguem (sem forçar) o seu mundo. Avaliação especializada pode mapear o perfil sensorial e definir estratégias de regulação que se traduzem em sessões e em casa.',
- when: 'Se as repetições limitam a vida da família, se há rigidez extrema com mudanças, se a criança parece desligada para além do brincar, ou se há suspeita de autismo, vale a pena fazer avaliação. Cedo é melhor.'
- },
- observador: {
- title: 'O Observador Atento',
- tagline: 'O seu filho processa muito, antes de agir.',
- meaning: 'Crianças neste perfil observam primeiro, agem depois. Aprendem em silêncio, engajam quando se sentem preparadas. Para muitas, isto é introversão saudável e força de carácter. Para outras, o silêncio é diferente, é distância. Distinguir entre as duas é o trabalho.',
- needs: 'Crianças neste perfil precisam de tempo, paciência, e atenção especial à dimensão social. Estratégias que respeitem o ritmo natural, sem empurrar para a interação, costumam funcionar melhor. Se a observação for sinal de ansiedade ou de retraimento, há intervenções específicas que ajudam.',
- when: 'Vale sempre uma avaliação, porque o limite entre temperamento e dificuldade nem sempre é óbvio. Não há perda em saber: se for temperamento, ficamos descansados. Se for outra coisa, agimos a tempo.'
- }
-};
-
-function submitQbEmailGate(e) {
- e.preventDefault();
- const profile = calculateQbProfile();
- const name = document.getElementById('qbName').value;
- const email = document.getElementById('qbEmail').value;
- const phone = document.getElementById('qbPhone').value;
-
- sendToBrevo({
- email, FIRSTNAME: name, TELEFONE: phone,
- QUIZ_BUCKET: profile, CONCERN: qbProfiles.join(','), SOURCE: 'Behavior Quiz'
- });
-
- qbEmailGate.classList.remove('active');
- showQbResult(profile);
- return false;
-}
-
-function showQbResult(profile) {
- const data = qbProfileData[profile];
- document.getElementById('qbResultBadge').textContent = 'Perfil de Comunicação';
- document.getElementById('qbResultTitle').textContent = data.title;
- document.getElementById('qbResultTagline').textContent = data.tagline;
- document.getElementById('qbResultMeaning').textContent = data.meaning;
- document.getElementById('qbResultNeeds').textContent = data.needs;
- document.getElementById('qbResultWhen').textContent = data.when;
- qbResult.classList.add('active');
- setTimeout(() => qbResult.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-}
-
-function shareQbResult() {
- const profile = calculateQbProfile();
- const data = qbProfileData[profile];
- const shareText = `Acabei de descobrir o estilo de comunicação do meu filho: "${data.title}". Vale a pena fazer o quiz!`;
- const shareUrl = 'https://www.ser-unico.com/#quiz-comportamento';
-
- if (navigator.share) {
- navigator.share({
- title: 'Quiz Ser Único: Estilo de Comunicação',
- text: shareText,
- url: shareUrl
- }).catch(() => {});
- } else {
- // Desktop fallback: copy to clipboard
- const fullText = shareText + ' ' + shareUrl;
- if (navigator.clipboard) {
- navigator.clipboard.writeText(fullText).then(() => {
- alert('Link copiado! Cole onde quiser partilhar.');
- });
- } else {
- // Older browsers: open WhatsApp web share
- window.open(`https://wa.me/?text=${encodeURIComponent(fullText)}`, '_blank');
- }
- }
-}
-
-updateQbProgress();
-
 // ============ QUIZ LOGIC ============
 let currentStep = 1;
 const totalSteps = 7;
@@ -3014,6 +2472,42 @@ function calculateBucket(pts) {
 
 function showEmailGate() {
  quizBody.style.display = 'none';
+
+ // Populate teaser based on result bucket
+ const teaserMap = {
+ low: {
+ badgeClass: 'badge-low',
+ badgeText: '🌱 Marcos no Caminho Certo',
+ title: 'O seu filho parece estar a desenvolver-se dentro do esperado.',
+ body: 'Pelas suas respostas, os marcos de desenvolvimento parecem estar alinhados com o esperado para a idade. Isso é ótimo.'
+ },
+ med: {
+ badgeClass: 'badge-med',
+ badgeText: '💜 Vale a Pena Uma Conversa',
+ title: 'Há alguns sinais que merecem atenção.',
+ body: 'As suas respostas indicam alguns indicadores que beneficiariam de uma observação mais atenta. Isto não significa que existe um problema, mas vale a pena perceber melhor.'
+ },
+ high: {
+ badgeClass: 'badge-high',
+ badgeText: '🔍 Avaliação Recomendada',
+ title: 'Recomendamos avaliação especializada.',
+ body: 'As suas respostas indicam vários sinais que justificam uma avaliação por uma equipa especializada. A sua preocupação é legítima.'
+ },
+ urgent: {
+ badgeClass: 'badge-urgent',
+ badgeText: '⏰ Prioridade Clínica',
+ title: 'Sugerimos avaliação prioritária.',
+ body: 'As suas respostas indicam vários sinais clínicos significativos. Recomendamos contacto rápido com uma equipa especializada.'
+ }
+ };
+
+ const t = teaserMap[resultBucket];
+ const badge = document.getElementById('teaserBadge');
+ badge.className = 'result-badge ' + t.badgeClass;
+ badge.textContent = t.badgeText;
+ document.getElementById('teaserTitle').textContent = t.title;
+ document.getElementById('teaserBody').textContent = t.body;
+
  quizEmailGate.classList.add('active');
  progressBar.style.width = '100%';
  setTimeout(() => quizEmailGate.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
